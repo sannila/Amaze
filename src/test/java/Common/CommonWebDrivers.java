@@ -39,6 +39,9 @@ public class CommonWebDrivers extends Config {
         return driver.findElement(By.xpath("//*[text()=' Show Filter ']"));
     }
 
-
+    public static String snackBarMessage(){
+        String message = driver.findElement(By.xpath("//simple-snack-bar//span[text()=\"Incorrect username or password.\"]")).getText();
+        return message;
+    }
 
 }

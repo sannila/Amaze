@@ -1,5 +1,6 @@
 package Login;
 
+import Common.CommonWebDrivers;
 import base.Config;
 import junit.framework.AssertionFailedError;
 import org.apache.log4j.Logger;
@@ -42,6 +43,7 @@ public class Login extends Config {
     Config config = new Config();
     static Screenshot takeScreenshot = new Screenshot();
     static Highlighter highlighter = new Highlighter();
+    static CommonWebDrivers commonWebDrivers = new CommonWebDrivers();
 
     /**
      * login constructor which initiates the PageFactory
@@ -74,24 +76,27 @@ public class Login extends Config {
     public void userName_validation_empty() {
         config.info(config.dateTime(), "Validating user name input field with empty data");
 
-        /**
-         * Below method used to highlight the current locator
-         */
-        highlighter.setHighLighter(driver, username);
         username.clear();
         username.sendKeys(Keys.TAB);
         config.info(config.dateTime(), "Sending user name value as \"\"");
         try {
-            Assert.assertEquals(usernameRequiredError.getText(), "Username is required");
+            Assert.assertEquals(usernameRequiredError.getText(), "Username is requireds");
         } catch (AssertionError e) {
+
+            /**
+             * Below method used to highlight the current locator
+             */
+            highlighter.setHighLighter(driver, usernameRequiredError);
+
             takeScreenshot.takeScreenshot(driver, "Login", "userName_validation_empty", "userName_validation_empty");
             config.fatal(config.dateTime(), ("Exception while validating user name with empty data: " + e.getMessage()));
+
+            /**
+             * Below method used to clear the highlighter from the current element
+             */
+            highlighter.clearHighLighter(driver, usernameRequiredError);
         }
 
-        /**
-         * Below method used to clear the highlighter from the current element
-         */
-        highlighter.clearHighLighter(driver, username);
     }
 
     /**
@@ -100,17 +105,17 @@ public class Login extends Config {
     public void userName_validation_pattern() {
         config.info(config.dateTime(), "Validating user name input field with an invalid data");
         String invalid_input = "!@#$";
-        highlighter.setHighLighter(driver, username);
         username.clear();
         username.sendKeys(invalid_input);
         config.info(config.dateTime(), ("Sending user name input value as " + invalid_input));
         try {
             Assert.assertEquals(usernamePatternError.getText(), "Enter a valid username");
         } catch (AssertionError e) {
+            highlighter.setHighLighter(driver, usernamePatternError);
             takeScreenshot.takeScreenshot(driver, "Login", "userName_validation_pattern", "userName_validation_pattern");
             config.fatal(config.dateTime(), ("Exception while validating user name input field with invalid data: " + e.getMessage()));
+            highlighter.clearHighLighter(driver, usernamePatternError);
         }
-        highlighter.clearHighLighter(driver, username);
     }
 
     /**
@@ -118,17 +123,17 @@ public class Login extends Config {
      */
     public void password_validation_empty() {
         config.info(config.dateTime(), "Validating the password input field with an empty date");
-        highlighter.setHighLighter(driver, password);
         password.clear();
         password.sendKeys(Keys.TAB);
         config.info(config.dateTime(), ("Sending password input value as \"\""));
         try {
             Assert.assertEquals(passwordRequiredError.getText(), "Password is required");
         } catch (AssertionError e) {
+            highlighter.setHighLighter(driver, passwordRequiredError);
             takeScreenshot.takeScreenshot(driver, "Login", "password_validation_empty", "password_validation_empty");
             config.fatal(config.dateTime(), ("Exception while validating password input field with empty data: " + e.getMessage()));
+            highlighter.clearHighLighter(driver, passwordRequiredError);
         }
-        highlighter.clearHighLighter(driver, password);
     }
 
     /**
@@ -139,12 +144,10 @@ public class Login extends Config {
         String invalid_username = "qwerty";
         String invalid_password = "qwerty";
 
-        highlighter.setHighLighter(driver, username);
         username.clear();
         username.sendKeys(invalid_username);
         config.info(config.dateTime(), ("Sending user name as: " + invalid_username));
 
-        highlighter.setHighLighter(driver, password);
         password.clear();
         password.sendKeys(invalid_password);
         config.info(config.dateTime(), ("Sending user name as: " + invalid_password));
@@ -156,13 +159,11 @@ public class Login extends Config {
         wait.until(ExpectedConditions.urlContains(url));
         try {
             Assert.assertEquals(driver.getCurrentUrl(), url);
+            Assert.assertEquals(commonWebDrivers.snackBarMessage(), "Invalid username or password");
         } catch (AssertionError e) {
             takeScreenshot.takeScreenshot(driver, "Login", "invalid_username_password", "invalid_username_password");
             config.fatal(config.dateTime(), ("Exception while validating username and password with invalid data: " + e.getMessage()));
         }
-
-        highlighter.clearHighLighter(driver, username);
-        highlighter.clearHighLighter(driver, password);
     }
 
     /**
@@ -173,19 +174,14 @@ public class Login extends Config {
         config.info(config.dateTime(), "Validating user name & password input field with an valid data");
         wait.until(ExpectedConditions.elementToBeClickable(submit_button));
 
-        highlighter.setHighLighter(driver, username);
         username.clear();
         username.sendKeys(userName);
         config.info(config.dateTime(), ("Sending user name as: " + userName));
 
-        highlighter.setHighLighter(driver, password);
         password.clear();
         password.sendKeys(pwd);
         config.info(config.dateTime(), ("Sending user name as: " + pwd));
 
-
-        highlighter.clearHighLighter(driver, username);
-        highlighter.clearHighLighter(driver, password);
         submit_button.click();
         wait.until(ExpectedConditions.urlContains(url + "pages/dashboard/project"));
 

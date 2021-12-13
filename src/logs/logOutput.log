@@ -2161,3 +2161,114 @@ X
 X
 
 
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 21_33_52               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 21_33_52: Getting the chrome browser from xml
+Resolution chrome=96 in cache (valid until 22:00:06 13/12/2021 IST)
+Resolution chrome96=96.0.4664.45 in cache (valid until 19:54:31 14/12/2021 IST)
+Using chromedriver 96.0.4664.45 (resolved driver for Chrome 96)
+Driver chromedriver 96.0.4664.45 found in cache
+Exporting webdriver.chrome.driver as C:\Users\KMIT\.cache\selenium\chromedriver\win32\96.0.4664.45\chromedriver.exe
+Info 2021_12_13 21_33_55: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 21_33_59: Checking for page title
+
+Fatal 2021_12_13 21_34_00: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 21_34_00: Validating user name input field with empty data
+Info 2021_12_13 21_34_00: Sending user name value as ""
+
+Fatal 2021_12_13 21_34_01: Exception while validating user name with empty data: expected [Username is requireds] but found [Username is required]
+
+Info 2021_12_13 21_34_01: Validating user name input field with an invalid data
+Info 2021_12_13 21_34_02: Sending user name input value as !@#$
+Info 2021_12_13 21_34_02: Validating the password input field with an empty date
+Info 2021_12_13 21_34_02: Sending password input value as ""
+Info 2021_12_13 21_34_02: Validating user name & password input field with an invalid data
+Info 2021_12_13 21_34_02: Sending user name as: qwerty
+Info 2021_12_13 21_34_02: Sending user name as: qwerty
+Info 2021_12_13 21_34_03: Clicking Login button
+Info 2021_12_13 21_34_13: Validating user name & password input field with an valid data
+Info 2021_12_13 21_34_13: Sending user name as: amazeqa
+Info 2021_12_13 21_34_13: Sending user name as: Password@1234
+
+****Initializing User Master Test Cases****
+Info 2021_12_13 21_34_30: Opening the left menu by clicking side toggle
+Info 2021_12_13 21_34_30: Navigating to Back office by clicking Back office menu
+Info 2021_12_13 21_34_30: Moving mouse to the Organization on header navigation
+Info 2021_12_13 21_34_34: Moving mouse to ghe User link in organization navigation menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 21_46_11               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 21_46_11: Getting the chrome browser from xml
+Resolution chrome=96 in cache (valid until 22:00:06 13/12/2021 IST)
+Resolution chrome96=96.0.4664.45 in cache (valid until 19:54:31 14/12/2021 IST)
+Using chromedriver 96.0.4664.45 (resolved driver for Chrome 96)
+Driver chromedriver 96.0.4664.45 found in cache
+Exporting webdriver.chrome.driver as C:\Users\KMIT\.cache\selenium\chromedriver\win32\96.0.4664.45\chromedriver.exe
+Info 2021_12_13 21_46_15: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 21_46_22: Checking for page title
+
+Fatal 2021_12_13 21_46_23: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 21_46_23: Validating user name input field with empty data
+Info 2021_12_13 21_46_23: Sending user name value as ""
+
+Fatal 2021_12_13 21_46_24: Exception while validating user name with empty data: expected [Username is requireds] but found [Username is required]
+
+Info 2021_12_13 21_46_24: Validating user name input field with an invalid data
+Info 2021_12_13 21_46_24: Sending user name input value as !@#$
+Info 2021_12_13 21_46_24: Validating the password input field with an empty date
+Info 2021_12_13 21_46_24: Sending password input value as ""
+Info 2021_12_13 21_46_24: Validating user name & password input field with an invalid data
+Info 2021_12_13 21_46_24: Sending user name as: qwerty
+Info 2021_12_13 21_46_24: Sending user name as: qwerty
+Info 2021_12_13 21_46_24: Clicking Login button
+
+Fatal 2021_12_13 21_46_33: Exception while validating username and password with invalid data: expected [Invalid username or password] but found [Incorrect username or password.]
+
+Info 2021_12_13 21_46_38: Validating user name & password input field with an valid data
+Info 2021_12_13 21_46_38: Sending user name as: amazeqa
+Info 2021_12_13 21_46_38: Sending user name as: Password@1234
+
+****Initializing User Master Test Cases****
+Info 2021_12_13 21_46_55: Opening the left menu by clicking side toggle
+Info 2021_12_13 21_46_55: Navigating to Back office by clicking Back office menu
+Info 2021_12_13 21_46_56: Moving mouse to the Organization on header navigation
+Info 2021_12_13 21_47_01: Moving mouse to ghe User link in organization navigation menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
