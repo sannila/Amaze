@@ -1,0 +1,2112 @@
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_08 19_54_51               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_08 19_54_51: Getting the chrome browser from xml
+Info 2021_12_08 19_54_53: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_08 19_54_57: Checking for page title
+
+Fatal 2021_12_08 19_54_59: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_08 19_54_59: Validating user name input field with empty data
+Info 2021_12_08 19_54_59: Sending user name value as ""
+Info 2021_12_08 19_54_59: Validating user name input field with an invalid data
+Info 2021_12_08 19_54_59: Sending user name input value as !@#$
+Info 2021_12_08 19_54_59: Validating the password input field with an empty date
+Info 2021_12_08 19_54_59: Sending password input value as ""
+Info 2021_12_08 19_54_59: Validating user name & password input field with an invalid data
+Info 2021_12_08 19_54_59: Sending user name as: qwerty
+Info 2021_12_08 19_54_59: Sending user name as: qwerty
+Info 2021_12_08 19_55_00: Clicking Login button
+Info 2021_12_08 19_55_05: Validating user name & password input field with an valid data
+Info 2021_12_08 19_55_05: Sending user name as: amazeqa
+Info 2021_12_08 19_55_05: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_08 19_56_19               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_08 19_56_19: Getting the chrome browser from xml
+Info 2021_12_08 19_56_21: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_08 19_56_24: Checking for page title
+
+Fatal 2021_12_08 19_56_25: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_08 19_56_25: Validating user name input field with empty data
+Info 2021_12_08 19_56_25: Sending user name value as ""
+Info 2021_12_08 19_56_25: Validating user name input field with an invalid data
+Info 2021_12_08 19_56_25: Sending user name input value as !@#$
+Info 2021_12_08 19_56_25: Validating the password input field with an empty date
+Info 2021_12_08 19_56_26: Sending password input value as ""
+Info 2021_12_08 19_56_26: Validating user name & password input field with an invalid data
+Info 2021_12_08 19_56_26: Sending user name as: qwerty
+Info 2021_12_08 19_56_26: Sending user name as: qwerty
+Info 2021_12_08 19_56_26: Clicking Login button
+Info 2021_12_08 19_56_31: Validating user name & password input field with an valid data
+Info 2021_12_08 19_56_31: Sending user name as: amazeqa
+Info 2021_12_08 19_56_31: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_08 19_57_17               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_08 19_57_17: Getting the chrome browser from xml
+Info 2021_12_08 19_57_18: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_08 19_57_22: Checking for page title
+
+Fatal 2021_12_08 19_57_23: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_08 19_57_23: Validating user name input field with empty data
+Info 2021_12_08 19_57_23: Sending user name value as ""
+Info 2021_12_08 19_57_23: Validating user name input field with an invalid data
+Info 2021_12_08 19_57_23: Sending user name input value as !@#$
+Info 2021_12_08 19_57_23: Validating the password input field with an empty date
+Info 2021_12_08 19_57_23: Sending password input value as ""
+Info 2021_12_08 19_57_23: Validating user name & password input field with an invalid data
+Info 2021_12_08 19_57_23: Sending user name as: qwerty
+Info 2021_12_08 19_57_23: Sending user name as: qwerty
+Info 2021_12_08 19_57_23: Clicking Login button
+Info 2021_12_08 19_57_33: Validating user name & password input field with an valid data
+Info 2021_12_08 19_57_34: Sending user name as: amazeqa
+Info 2021_12_08 19_57_34: Sending user name as: Password@1234
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_08 19_58_16               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_08 19_58_16: Getting the chrome browser from xml
+Info 2021_12_08 19_58_18: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_08 19_58_22: Checking for page title
+
+Fatal 2021_12_08 19_58_23: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_08 19_58_23: Validating user name input field with empty data
+Info 2021_12_08 19_58_23: Sending user name value as ""
+
+Fatal 2021_12_08 19_58_24: Exception while validating user name with empty data: expected [Username is required] but found []
+
+Info 2021_12_08 19_58_24: Validating user name input field with an invalid data
+Info 2021_12_08 19_58_24: Sending user name input value as !@#$
+Info 2021_12_08 19_58_24: Validating the password input field with an empty date
+Info 2021_12_08 19_58_24: Sending password input value as ""
+Info 2021_12_08 19_58_24: Validating user name & password input field with an invalid data
+Info 2021_12_08 19_58_24: Sending user name as: qwerty
+Info 2021_12_08 19_58_24: Sending user name as: qwerty
+Info 2021_12_08 19_58_24: Clicking Login button
+Info 2021_12_08 19_58_34: Validating user name & password input field with an valid data
+Info 2021_12_08 19_58_34: Sending user name as: amazeqa
+Info 2021_12_08 19_58_35: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_08 20_01_31               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_08 20_01_31: Getting the chrome browser from xml
+Info 2021_12_08 20_01_33: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_08 20_01_37: Checking for page title
+
+Fatal 2021_12_08 20_01_39: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_08 20_01_39: Validating user name input field with empty data
+Info 2021_12_08 20_01_39: Sending user name value as ""
+Info 2021_12_08 20_01_39: Validating user name input field with an invalid data
+Info 2021_12_08 20_01_39: Sending user name input value as !@#$
+Info 2021_12_08 20_01_39: Validating the password input field with an empty date
+Info 2021_12_08 20_01_40: Sending password input value as ""
+Info 2021_12_08 20_01_40: Validating user name & password input field with an invalid data
+Info 2021_12_08 20_01_40: Sending user name as: qwerty
+Info 2021_12_08 20_01_40: Sending user name as: qwerty
+Info 2021_12_08 20_01_40: Clicking Login button
+Info 2021_12_08 20_01_50: Validating user name & password input field with an valid data
+Info 2021_12_08 20_01_50: Sending user name as: amazeqa
+Info 2021_12_08 20_01_51: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_08 20_32_20               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_08 20_32_20: Getting the chrome browser from xml
+Info 2021_12_08 20_32_24: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_08 20_32_28: Checking for page title
+
+Fatal 2021_12_08 20_32_30: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_08 20_32_30: Validating user name input field with empty data
+Info 2021_12_08 20_32_30: Sending user name value as ""
+Info 2021_12_08 20_32_30: Validating user name input field with an invalid data
+Info 2021_12_08 20_32_30: Sending user name input value as !@#$
+Info 2021_12_08 20_32_30: Validating the password input field with an empty date
+Info 2021_12_08 20_32_30: Sending password input value as ""
+Info 2021_12_08 20_32_30: Validating user name & password input field with an invalid data
+Info 2021_12_08 20_32_30: Sending user name as: qwerty
+Info 2021_12_08 20_32_30: Sending user name as: qwerty
+Info 2021_12_08 20_32_30: Clicking Login button
+Info 2021_12_08 20_32_41: Validating user name & password input field with an valid data
+Info 2021_12_08 20_32_41: Sending user name as: amazeqa
+Info 2021_12_08 20_32_41: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_08 20_33_29               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_08 20_33_29: Getting the chrome browser from xml
+Info 2021_12_08 20_33_31: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_08 20_33_35: Checking for page title
+
+Fatal 2021_12_08 20_33_36: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_08 20_33_36: Validating user name input field with empty data
+Info 2021_12_08 20_33_36: Sending user name value as ""
+
+Fatal 2021_12_08 20_33_37: Exception while validating user name with empty data: expected [Username is required] but found []
+
+Info 2021_12_08 20_33_37: Validating user name input field with an invalid data
+Info 2021_12_08 20_33_37: Sending user name input value as !@#$
+Info 2021_12_08 20_33_37: Validating the password input field with an empty date
+Info 2021_12_08 20_33_37: Sending password input value as ""
+Info 2021_12_08 20_33_37: Validating user name & password input field with an invalid data
+Info 2021_12_08 20_33_37: Sending user name as: qwerty
+Info 2021_12_08 20_33_37: Sending user name as: qwerty
+Info 2021_12_08 20_33_37: Clicking Login button
+Info 2021_12_08 20_33_47: Validating user name & password input field with an valid data
+Info 2021_12_08 20_33_48: Sending user name as: amazeqa
+Info 2021_12_08 20_33_48: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_08 20_35_19               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_08 20_35_19: Getting the chrome browser from xml
+Info 2021_12_08 20_35_21: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_08 20_35_24: Checking for page title
+
+Fatal 2021_12_08 20_35_25: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_08 20_35_25: Validating user name input field with empty data
+Info 2021_12_08 20_35_25: Sending user name value as ""
+
+Fatal 2021_12_08 20_35_26: Exception while validating user name with empty data: expected [Username is required] but found []
+
+Info 2021_12_08 20_35_26: Validating user name input field with an invalid data
+Info 2021_12_08 20_35_26: Sending user name input value as !@#$
+Info 2021_12_08 20_35_26: Validating the password input field with an empty date
+Info 2021_12_08 20_35_26: Sending password input value as ""
+Info 2021_12_08 20_35_26: Validating user name & password input field with an invalid data
+Info 2021_12_08 20_35_26: Sending user name as: qwerty
+Info 2021_12_08 20_35_26: Sending user name as: qwerty
+Info 2021_12_08 20_35_27: Clicking Login button
+Info 2021_12_08 20_35_37: Validating user name & password input field with an valid data
+Info 2021_12_08 20_35_37: Sending user name as: amazeqa
+Info 2021_12_08 20_35_37: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_08 20_36_12               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_08 20_36_12: Getting the chrome browser from xml
+Info 2021_12_08 20_36_14: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_08 20_36_17: Checking for page title
+
+Fatal 2021_12_08 20_36_18: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_08 20_36_18: Validating user name input field with empty data
+Info 2021_12_08 20_36_18: Sending user name value as ""
+
+Fatal 2021_12_08 20_36_19: Exception while validating user name with empty data: expected [Username is required] but found []
+
+Info 2021_12_08 20_36_19: Validating user name input field with an invalid data
+Info 2021_12_08 20_36_19: Sending user name input value as !@#$
+Info 2021_12_08 20_36_19: Validating the password input field with an empty date
+Info 2021_12_08 20_36_20: Sending password input value as ""
+Info 2021_12_08 20_36_20: Validating user name & password input field with an invalid data
+Info 2021_12_08 20_36_20: Sending user name as: qwerty
+Info 2021_12_08 20_36_20: Sending user name as: qwerty
+Info 2021_12_08 20_36_20: Clicking Login button
+Info 2021_12_08 20_36_30: Validating user name & password input field with an valid data
+Info 2021_12_08 20_36_30: Sending user name as: amazeqa
+Info 2021_12_08 20_36_30: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_08 20_37_21               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_08 20_37_21: Getting the chrome browser from xml
+Info 2021_12_08 20_37_23: open the chrome driver
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_08 20_43_04               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_08 20_43_04: Getting the chrome browser from xml
+Info 2021_12_08 20_43_05: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_08 20_43_14: Validating user name & password input field with an valid data
+Info 2021_12_08 20_43_14: Sending user name as: http://localhost:4200/#/
+Info 2021_12_08 20_43_14: Sending user name as: amazeqa
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_08 20_43_56               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_08 20_43_56: Getting the chrome browser from xml
+Info 2021_12_08 20_43_57: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_08 20_44_06: Validating user name & password input field with an valid data
+Info 2021_12_08 20_44_06: Sending user name as: amazeqa
+Info 2021_12_08 20_44_06: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_08 20_44_42               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_08 20_44_42: Getting the chrome browser from xml
+Info 2021_12_08 20_44_43: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_08 20_44_47: Checking for page title
+
+Fatal 2021_12_08 20_44_47: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_08 20_44_47: Validating user name input field with empty data
+Info 2021_12_08 20_44_48: Sending user name value as ""
+
+Fatal 2021_12_08 20_44_48: Exception while validating user name with empty data: expected [Username is required] but found []
+
+Info 2021_12_08 20_44_48: Validating user name input field with an invalid data
+Info 2021_12_08 20_44_48: Sending user name input value as !@#$
+Info 2021_12_08 20_44_49: Validating the password input field with an empty date
+Info 2021_12_08 20_44_49: Sending password input value as ""
+Info 2021_12_08 20_44_49: Validating user name & password input field with an invalid data
+Info 2021_12_08 20_44_49: Sending user name as: qwerty
+Info 2021_12_08 20_44_49: Sending user name as: qwerty
+Info 2021_12_08 20_44_49: Clicking Login button
+Info 2021_12_08 20_44_59: Validating user name & password input field with an valid data
+Info 2021_12_08 20_44_59: Sending user name as: amazeqa
+Info 2021_12_08 20_44_59: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_08 20_53_48               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_08 20_53_48: Getting the chrome browser from xml
+Info 2021_12_08 20_53_49: open the chrome driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_08 20_53_58: Validating user name & password input field with an valid data
+Info 2021_12_08 20_53_58: Sending user name as: amazeqa
+Info 2021_12_08 20_53_59: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_08 20_57_37               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_08 20_57_37: Getting the chrome browser from xml
+Info 2021_12_08 20_57_39: open the chrome driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_08 20_57_48: Validating user name & password input field with an valid data
+Info 2021_12_08 20_57_48: Sending user name as: amazeqa
+Info 2021_12_08 20_57_48: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_08 21_02_15               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_08 21_02_15: Getting the chrome browser from xml
+Info 2021_12_08 21_02_17: open the chrome driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_08 21_02_25: Validating user name & password input field with an valid data
+Info 2021_12_08 21_02_26: Sending user name as: amazeqa
+Info 2021_12_08 21_02_26: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 20_14_40               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 20_14_40: Getting the chrome browser from xml
+Info 2021_12_09 20_14_43: open the chrome driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_09 20_14_54: Validating user name & password input field with an valid data
+Info 2021_12_09 20_14_54: Sending user name as: amazeqa
+Info 2021_12_09 20_14_54: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 20_45_33               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 20_45_33: Getting the chrome browser from xml
+Info 2021_12_09 20_45_36: open the chrome driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_09 20_45_51: Validating user name & password input field with an valid data
+Info 2021_12_09 20_45_51: Sending user name as: amazeqa
+Info 2021_12_09 20_45_52: Sending user name as: Password@1234
+2021_12_09 20_46_14Opening the left menu by clicking side toggle
+2021_12_09 20_46_14Navigating to Back office by clicking Back office menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 20_46_57               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 20_46_57: Getting the chrome browser from xml
+Info 2021_12_09 20_46_59: open the chrome driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_09 20_47_08: Validating user name & password input field with an valid data
+Info 2021_12_09 20_47_08: Sending user name as: amazeqa
+Info 2021_12_09 20_47_08: Sending user name as: Password@1234
+2021_12_09 20_47_25Opening the left menu by clicking side toggle
+2021_12_09 20_47_25Navigating to Back office by clicking Back office menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 20_47_59               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 20_47_59: Getting the chrome browser from xml
+Info 2021_12_09 20_48_02: open the chrome driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_09 20_48_11: Validating user name & password input field with an valid data
+Info 2021_12_09 20_48_11: Sending user name as: amazeqa
+Info 2021_12_09 20_48_11: Sending user name as: Password@1234
+2021_12_09 20_48_23Opening the left menu by clicking side toggle
+2021_12_09 20_48_23Navigating to Back office by clicking Back office menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 20_55_02               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 20_55_02: Getting the chrome browser from xml
+Info 2021_12_09 20_55_05: open the chrome driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_09 20_55_14: Validating user name & password input field with an valid data
+Info 2021_12_09 20_55_14: Sending user name as: amazeqa
+Info 2021_12_09 20_55_14: Sending user name as: Password@1234
+2021_12_09 20_55_31Opening the left menu by clicking side toggle
+2021_12_09 20_55_32Navigating to Back office by clicking Back office menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 20_57_00               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 20_57_00: Getting the chrome browser from xml
+Info 2021_12_09 20_57_02: open the chrome driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_09 20_57_11: Validating user name & password input field with an valid data
+Info 2021_12_09 20_57_11: Sending user name as: amazeqa
+Info 2021_12_09 20_57_11: Sending user name as: Password@1234
+2021_12_09 20_57_22Opening the left menu by clicking side toggle
+2021_12_09 20_57_22Navigating to Back office by clicking Back office menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 20_57_50               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 20_57_50: Getting the chrome browser from xml
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 20_57_59               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 20_57_59: Getting the chrome browser from xml
+Info 2021_12_09 20_58_01: open the chrome driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_09 20_58_10: Validating user name & password input field with an valid data
+Info 2021_12_09 20_58_11: Sending user name as: amazeqa
+Info 2021_12_09 20_58_11: Sending user name as: Password@1234
+2021_12_09 20_58_22Opening the left menu by clicking side toggle
+2021_12_09 20_58_22Navigating to Back office by clicking Back office menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 20_58_58               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 20_58_58: Getting the chrome browser from xml
+Info 2021_12_09 20_59_00: open the chrome driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_09 20_59_10: Validating user name & password input field with an valid data
+Info 2021_12_09 20_59_10: Sending user name as: amazeqa
+Info 2021_12_09 20_59_10: Sending user name as: Password@1234
+2021_12_09 20_59_21Opening the left menu by clicking side toggle
+2021_12_09 20_59_21Navigating to Back office by clicking Back office menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 21_01_03               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 21_01_03: Getting the chrome browser from xml
+Info 2021_12_09 21_01_04: open the chrome driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_09 21_01_13: Validating user name & password input field with an valid data
+Info 2021_12_09 21_01_13: Sending user name as: amazeqa
+Info 2021_12_09 21_01_13: Sending user name as: Password@1234
+2021_12_09 21_01_25Opening the left menu by clicking side toggle
+2021_12_09 21_01_25Navigating to Back office by clicking Back office menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 21_01_51               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 21_01_51: Getting the chrome browser from xml
+Info 2021_12_09 21_01_53: open the chrome driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_09 21_02_02: Validating user name & password input field with an valid data
+Info 2021_12_09 21_02_02: Sending user name as: amazeqa
+Info 2021_12_09 21_02_02: Sending user name as: Password@1234
+2021_12_09 21_02_14Opening the left menu by clicking side toggle
+2021_12_09 21_02_14Navigating to Back office by clicking Back office menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 21_25_34               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 21_25_34: Getting the chrome browser from xml
+Info 2021_12_09 21_25_42: open the chrome driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_09 21_25_58: Validating user name & password input field with an valid data
+Info 2021_12_09 21_25_58: Sending user name as: amazeqa
+Info 2021_12_09 21_25_58: Sending user name as: Password@1234
+2021_12_09 21_26_21Opening the left menu by clicking side toggle
+2021_12_09 21_26_21Navigating to Back office by clicking Back office menu
+2021_12_09 21_26_22Moving mouse to the Organization on header navigation
+2021_12_09 21_26_28Moving mouse to ghe User link in organization navigation menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 21_28_47               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 21_28_47: Getting the safari browser from xml
+
+Fatal 2021_12_09 21_28_47: Exception while opening Safari driver: SafariDriver requires Safari 10 running on OSX El Capitan or greater.
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-2LHDPM7', ip: '192.168.168.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: SafariDriver
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 21_29_13               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 21_29_13: Getting the firefox browser from xml
+Info 2021_12_09 21_29_24: open the firefox driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_09 21_29_37: Validating user name & password input field with an valid data
+Info 2021_12_09 21_29_37: Sending user name as: amazeqa
+Info 2021_12_09 21_29_37: Sending user name as: Password@1234
+2021_12_09 21_29_54Opening the left menu by clicking side toggle
+2021_12_09 21_29_54Navigating to Back office by clicking Back office menu
+2021_12_09 21_29_55Moving mouse to the Organization on header navigation
+2021_12_09 21_30_00Moving mouse to ghe User link in organization navigation menu
+2021_12_09 21_30_01Clicking the User master link
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 21_32_02               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 21_32_02: Getting the firefox browser from xml
+Info 2021_12_09 21_32_09: open the firefox driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_09 21_32_19: Validating user name & password input field with an valid data
+Info 2021_12_09 21_32_19: Sending user name as: amazeqa
+Info 2021_12_09 21_32_19: Sending user name as: Password@1234
+2021_12_09 21_32_30Opening the left menu by clicking side toggle
+2021_12_09 21_32_31Navigating to Back office by clicking Back office menu
+2021_12_09 21_32_32Moving mouse to the Organization on header navigation
+2021_12_09 21_32_37Moving mouse to ghe User link in organization navigation menu
+2021_12_09 21_32_37Clicking the User master link
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 21_34_05               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 21_34_05: Getting the chrome browser from xml
+Info 2021_12_09 21_34_08: open the chrome driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_09 21_34_18: Validating user name & password input field with an valid data
+Info 2021_12_09 21_34_19: Sending user name as: amazeqa
+Info 2021_12_09 21_34_19: Sending user name as: Password@1234
+2021_12_09 21_34_31Opening the left menu by clicking side toggle
+2021_12_09 21_34_32Navigating to Back office by clicking Back office menu
+2021_12_09 21_34_32Moving mouse to the Organization on header navigation
+2021_12_09 21_34_36Moving mouse to ghe User link in organization navigation menu
+2021_12_09 21_34_37Clicking the User master link
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 21_38_04               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 21_38_04: Getting the firefox browser from xml
+Info 2021_12_09 21_38_13: open the firefox driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_09 21_38_26: Validating user name & password input field with an valid data
+Info 2021_12_09 21_38_26: Sending user name as: amazeqa
+Info 2021_12_09 21_38_26: Sending user name as: Password@1234
+2021_12_09 21_38_37Opening the left menu by clicking side toggle
+2021_12_09 21_38_38Navigating to Back office by clicking Back office menu
+2021_12_09 21_38_38Moving mouse to the Organization on header navigation
+2021_12_09 21_38_46Moving mouse to ghe User link in organization navigation menu
+2021_12_09 21_38_46Clicking the User master link
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 21_39_23               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 21_39_23: Getting the firefox browser from xml
+Info 2021_12_09 21_39_31: open the firefox driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_09 21_39_41: Validating user name & password input field with an valid data
+Info 2021_12_09 21_39_41: Sending user name as: amazeqa
+Info 2021_12_09 21_39_41: Sending user name as: Password@1234
+2021_12_09 21_39_52Opening the left menu by clicking side toggle
+2021_12_09 21_39_53Navigating to Back office by clicking Back office menu
+2021_12_09 21_39_54Moving mouse to the Organization on header navigation
+2021_12_09 21_39_59Moving mouse to ghe User link in organization navigation menu
+2021_12_09 21_39_59Clicking the User master link
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 21_41_15               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 21_41_15: Getting the chrome browser from xml
+Info 2021_12_09 21_41_19: open the chrome driver
+
+****Initializing User Master Test Cases****
+
+****Initializing Login Test Cases****
+Info 2021_12_09 21_41_31: Validating user name & password input field with an valid data
+Info 2021_12_09 21_41_32: Sending user name as: amazeqa
+Info 2021_12_09 21_41_32: Sending user name as: Password@1234
+2021_12_09 21_41_44Opening the left menu by clicking side toggle
+2021_12_09 21_41_44Navigating to Back office by clicking Back office menu
+2021_12_09 21_41_44Moving mouse to the Organization on header navigation
+2021_12_09 21_41_49Moving mouse to ghe User link in organization navigation menu
+2021_12_09 21_41_49Clicking the User master link
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+****Initializing Login Test Cases****
+
+****Initializing Login Test Cases****
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_09 21_58_21               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_09 21_58_21: Getting the chrome browser from xml
+Info 2021_12_09 21_58_23: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_09 21_58_29: Checking for page title
+
+Fatal 2021_12_09 21_58_31: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_09 21_58_31: Validating user name input field with empty data
+Info 2021_12_09 21_58_31: Sending user name value as ""
+Info 2021_12_09 21_58_31: Validating user name input field with an invalid data
+Info 2021_12_09 21_58_31: Sending user name input value as !@#$
+Info 2021_12_09 21_58_31: Validating the password input field with an empty date
+Info 2021_12_09 21_58_31: Sending password input value as ""
+Info 2021_12_09 21_58_31: Validating user name & password input field with an invalid data
+Info 2021_12_09 21_58_31: Sending user name as: qwerty
+Info 2021_12_09 21_58_32: Sending user name as: qwerty
+Info 2021_12_09 21_58_32: Clicking Login button
+Info 2021_12_09 21_58_42: Validating user name & password input field with an valid data
+Info 2021_12_09 21_58_42: Sending user name as: amazeqa
+Info 2021_12_09 21_58_42: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+****Initializing Login Test Cases****
+
+****Initializing Login Test Cases****
+
+****Initializing Login Test Cases****
+
+****Initializing Login Test Cases****
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 19_54_29               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 19_54_29: Getting the chrome browser from xml
+Info 2021_12_13 19_54_33: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 19_54_37: Checking for page title
+
+Fatal 2021_12_13 19_54_38: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 19_54_38: Validating user name input field with empty data
+Info 2021_12_13 19_54_38: Sending user name value as ""
+Info 2021_12_13 19_54_38: Validating user name input field with an invalid data
+Info 2021_12_13 19_54_39: Sending user name input value as !@#$
+Info 2021_12_13 19_54_39: Validating the password input field with an empty date
+Info 2021_12_13 19_54_39: Sending password input value as ""
+Info 2021_12_13 19_54_39: Validating user name & password input field with an invalid data
+Info 2021_12_13 19_54_39: Sending user name as: qwerty
+Info 2021_12_13 19_54_39: Sending user name as: qwerty
+Info 2021_12_13 19_54_39: Clicking Login button
+Info 2021_12_13 19_54_49: Validating user name & password input field with an valid data
+Info 2021_12_13 19_54_49: Sending user name as: amazeqa
+Info 2021_12_13 19_54_50: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 20_04_50               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 20_04_50: Getting the chrome browser from xml
+Info 2021_12_13 20_04_53: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 20_04_57: Checking for page title
+
+Fatal 2021_12_13 20_04_58: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 20_04_58: Validating user name input field with empty data
+Info 2021_12_13 20_04_58: Sending user name value as ""
+Info 2021_12_13 20_04_59: Validating user name input field with an invalid data
+Info 2021_12_13 20_04_59: Sending user name input value as !@#$
+Info 2021_12_13 20_04_59: Validating the password input field with an empty date
+Info 2021_12_13 20_04_59: Sending password input value as ""
+Info 2021_12_13 20_04_59: Validating user name & password input field with an invalid data
+Info 2021_12_13 20_04_59: Sending user name as: qwerty
+Info 2021_12_13 20_04_59: Sending user name as: qwerty
+Info 2021_12_13 20_04_59: Clicking Login button
+Info 2021_12_13 20_05_09: Validating user name & password input field with an valid data
+Info 2021_12_13 20_05_10: Sending user name as: amazeqa
+Info 2021_12_13 20_05_10: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 20_09_03               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 20_09_03: Getting the chrome browser from xml
+Info 2021_12_13 20_09_05: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 20_09_09: Checking for page title
+
+Fatal 2021_12_13 20_09_09: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 20_09_09: Validating user name input field with empty data
+Info 2021_12_13 20_09_10: Sending user name value as ""
+
+Fatal 2021_12_13 20_09_10: Exception while validating user name with empty data: expected [Username is required] but found []
+
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 20_09_43               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 20_09_43: Getting the chrome browser from xml
+Info 2021_12_13 20_09_45: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 20_09_49: Checking for page title
+
+Fatal 2021_12_13 20_09_50: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 20_09_50: Validating user name input field with empty data
+Info 2021_12_13 20_09_50: Sending user name value as ""
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 20_10_58               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 20_10_58: Getting the chrome browser from xml
+Info 2021_12_13 20_11_00: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 20_11_04: Checking for page title
+
+Fatal 2021_12_13 20_11_04: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 20_11_04: Validating user name input field with empty data
+Info 2021_12_13 20_11_04: Sending user name value as ""
+
+Fatal 2021_12_13 20_11_05: Exception while validating user name with empty data: expected [Username is required] but found []
+
+Info 2021_12_13 20_11_05: Validating user name input field with an invalid data
+Info 2021_12_13 20_11_05: Sending user name input value as !@#$
+Info 2021_12_13 20_11_06: Validating the password input field with an empty date
+Info 2021_12_13 20_11_06: Sending password input value as ""
+Info 2021_12_13 20_11_06: Validating user name & password input field with an invalid data
+Info 2021_12_13 20_11_06: Sending user name as: qwerty
+Info 2021_12_13 20_11_06: Sending user name as: qwerty
+Info 2021_12_13 20_11_06: Clicking Login button
+Info 2021_12_13 20_11_16: Validating user name & password input field with an valid data
+Info 2021_12_13 20_11_16: Sending user name as: amazeqa
+Info 2021_12_13 20_11_16: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 20_14_13               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 20_14_13: Getting the chrome browser from xml
+Info 2021_12_13 20_14_15: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 20_14_19: Checking for page title
+
+Fatal 2021_12_13 20_14_19: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 20_14_19: Validating user name input field with empty data
+Info 2021_12_13 20_14_20: Sending user name value as ""
+Info 2021_12_13 20_14_20: Validating user name input field with an invalid data
+Info 2021_12_13 20_14_20: Sending user name input value as !@#$
+Info 2021_12_13 20_14_20: Validating the password input field with an empty date
+Info 2021_12_13 20_14_20: Sending password input value as ""
+Info 2021_12_13 20_14_20: Validating user name & password input field with an invalid data
+Info 2021_12_13 20_14_20: Sending user name as: qwerty
+Info 2021_12_13 20_14_20: Sending user name as: qwerty
+Info 2021_12_13 20_14_20: Clicking Login button
+Info 2021_12_13 20_14_30: Validating user name & password input field with an valid data
+Info 2021_12_13 20_14_31: Sending user name as: amazeqa
+Info 2021_12_13 20_14_31: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 20_15_46               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 20_15_46: Getting the chrome browser from xml
+Info 2021_12_13 20_15_48: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 20_15_52: Checking for page title
+
+Fatal 2021_12_13 20_15_53: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 20_15_53: Validating user name input field with empty data
+Info 2021_12_13 20_15_53: Sending user name value as ""
+Info 2021_12_13 20_15_53: Validating user name input field with an invalid data
+Info 2021_12_13 20_15_53: Sending user name input value as !@#$
+Info 2021_12_13 20_15_53: Validating the password input field with an empty date
+Info 2021_12_13 20_15_53: Sending password input value as ""
+Info 2021_12_13 20_15_53: Validating user name & password input field with an invalid data
+Info 2021_12_13 20_15_54: Sending user name as: qwerty
+Info 2021_12_13 20_15_54: Sending user name as: qwerty
+Info 2021_12_13 20_15_54: Clicking Login button
+Info 2021_12_13 20_16_04: Validating user name & password input field with an valid data
+Info 2021_12_13 20_16_04: Sending user name as: amazeqa
+Info 2021_12_13 20_16_04: Sending user name as: Password@1234
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 20_20_34               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 20_20_34: Getting the chrome browser from xml
+Info 2021_12_13 20_20_35: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 20_20_39: Checking for page title
+
+Fatal 2021_12_13 20_20_40: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 20_20_40: Validating user name input field with empty data
+Info 2021_12_13 20_20_40: Sending user name value as ""
+
+Fatal 2021_12_13 20_20_41: Exception while validating user name with empty data: expected [Username is required] but found []
+
+Info 2021_12_13 20_20_41: Validating user name input field with an invalid data
+Info 2021_12_13 20_20_41: Sending user name input value as !@#$
+Info 2021_12_13 20_20_41: Validating the password input field with an empty date
+Info 2021_12_13 20_20_41: Sending password input value as ""
+Info 2021_12_13 20_20_41: Validating user name & password input field with an invalid data
+Info 2021_12_13 20_20_42: Sending user name as: qwerty
+Info 2021_12_13 20_20_42: Sending user name as: qwerty
+Info 2021_12_13 20_20_42: Clicking Login button
+Info 2021_12_13 20_20_52: Validating user name & password input field with an valid data
+Info 2021_12_13 20_20_52: Sending user name as: amazeqa
+Info 2021_12_13 20_20_52: Sending user name as: Password@1234
+
+****Initializing User Master Test Cases****
+2021_12_13 20_21_03Opening the left menu by clicking side toggle
+2021_12_13 20_21_03Navigating to Back office by clicking Back office menu
+2021_12_13 20_21_04Moving mouse to the Organization on header navigation
+2021_12_13 20_21_07Moving mouse to ghe User link in organization navigation menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 20_22_14               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 20_22_14: Getting the chrome browser from xml
+Info 2021_12_13 20_22_16: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 20_22_20: Checking for page title
+
+Fatal 2021_12_13 20_22_21: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 20_22_21: Validating user name input field with empty data
+Info 2021_12_13 20_22_21: Sending user name value as ""
+
+Fatal 2021_12_13 20_22_21: Exception while validating user name with empty data: expected [Username is required] but found []
+
+Info 2021_12_13 20_22_21: Validating user name input field with an invalid data
+Info 2021_12_13 20_22_22: Sending user name input value as !@#$
+Info 2021_12_13 20_22_22: Validating the password input field with an empty date
+Info 2021_12_13 20_22_22: Sending password input value as ""
+Info 2021_12_13 20_22_22: Validating user name & password input field with an invalid data
+Info 2021_12_13 20_22_22: Sending user name as: qwerty
+Info 2021_12_13 20_22_22: Sending user name as: qwerty
+Info 2021_12_13 20_22_22: Clicking Login button
+Info 2021_12_13 20_22_32: Validating user name & password input field with an valid data
+Info 2021_12_13 20_22_33: Sending user name as: amazeqa
+Info 2021_12_13 20_22_33: Sending user name as: Password@1234
+
+****Initializing User Master Test Cases****
+2021_12_13 20_22_43Opening the left menu by clicking side toggle
+2021_12_13 20_22_43Navigating to Back office by clicking Back office menu
+2021_12_13 20_22_44Moving mouse to the Organization on header navigation
+2021_12_13 20_22_47Moving mouse to ghe User link in organization navigation menu
+2021_12_13 20_22_47Clicking the User master link
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 20_32_07               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 20_32_07: Getting the chrome browser from xml
+Info 2021_12_13 20_32_10: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 20_32_15: Checking for page title
+
+Fatal 2021_12_13 20_32_16: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 20_32_16: Validating user name input field with empty data
+Info 2021_12_13 20_32_16: Sending user name value as ""
+Info 2021_12_13 20_32_16: Validating user name input field with an invalid data
+Info 2021_12_13 20_32_17: Sending user name input value as !@#$
+Info 2021_12_13 20_32_17: Validating the password input field with an empty date
+Info 2021_12_13 20_32_17: Sending password input value as ""
+Info 2021_12_13 20_32_17: Validating user name & password input field with an invalid data
+Info 2021_12_13 20_32_17: Sending user name as: qwerty
+Info 2021_12_13 20_32_17: Sending user name as: qwerty
+Info 2021_12_13 20_32_17: Clicking Login button
+Info 2021_12_13 20_32_27: Validating user name & password input field with an valid data
+Info 2021_12_13 20_32_28: Sending user name as: amazeqa
+Info 2021_12_13 20_32_28: Sending user name as: Password@1234
+
+****Initializing User Master Test Cases****
+2021_12_13 20_32_44Opening the left menu by clicking side toggle
+2021_12_13 20_32_44Navigating to Back office by clicking Back office menu
+2021_12_13 20_32_45Moving mouse to the Organization on header navigation
+2021_12_13 20_32_49Moving mouse to ghe User link in organization navigation menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 20_35_17               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 20_35_17: Getting the chrome browser from xml
+Info 2021_12_13 20_35_19: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 20_35_23: Checking for page title
+
+Fatal 2021_12_13 20_35_24: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 20_35_24: Validating user name input field with empty data
+Info 2021_12_13 20_35_24: Sending user name value as ""
+Info 2021_12_13 20_35_24: Validating user name input field with an invalid data
+Info 2021_12_13 20_35_24: Sending user name input value as !@#$
+Info 2021_12_13 20_35_24: Validating the password input field with an empty date
+Info 2021_12_13 20_35_25: Sending password input value as ""
+Info 2021_12_13 20_35_25: Validating user name & password input field with an invalid data
+Info 2021_12_13 20_35_25: Sending user name as: qwerty
+Info 2021_12_13 20_35_25: Sending user name as: qwerty
+Info 2021_12_13 20_35_25: Clicking Login button
+Info 2021_12_13 20_35_35: Validating user name & password input field with an valid data
+Info 2021_12_13 20_35_35: Sending user name as: amazeqa
+Info 2021_12_13 20_35_35: Sending user name as: Password@1234
+
+****Initializing User Master Test Cases****
+2021_12_13 20_35_52Opening the left menu by clicking side toggle
+2021_12_13 20_35_52Navigating to Back office by clicking Back office menu
+2021_12_13 20_35_52Moving mouse to the Organization on header navigation
+2021_12_13 20_35_56Moving mouse to ghe User link in organization navigation menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 20_42_49               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 20_42_49: Getting the chrome browser from xml
+Info 2021_12_13 20_42_51: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 20_42_55: Checking for page title
+
+Fatal 2021_12_13 20_42_56: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 20_42_56: Validating user name input field with empty data
+Info 2021_12_13 20_42_56: Sending user name value as ""
+
+Fatal 2021_12_13 20_42_57: Exception while validating user name with empty data: expected [Username is required] but found []
+
+Info 2021_12_13 20_42_57: Validating user name input field with an invalid data
+Info 2021_12_13 20_42_57: Sending user name input value as !@#$
+Info 2021_12_13 20_42_57: Validating the password input field with an empty date
+Info 2021_12_13 20_42_57: Sending password input value as ""
+Info 2021_12_13 20_42_57: Validating user name & password input field with an invalid data
+Info 2021_12_13 20_42_58: Sending user name as: qwerty
+Info 2021_12_13 20_42_58: Sending user name as: qwerty
+Info 2021_12_13 20_42_58: Clicking Login button
+Info 2021_12_13 20_43_08: Validating user name & password input field with an valid data
+Info 2021_12_13 20_43_08: Sending user name as: amazeqa
+Info 2021_12_13 20_43_08: Sending user name as: Password@1234
+
+****Initializing User Master Test Cases****
+Info 2021_12_13 20_43_25: Opening the left menu by clicking side toggle
+Info 2021_12_13 20_43_25: Navigating to Back office by clicking Back office menu
+Info 2021_12_13 20_43_25: Moving mouse to the Organization on header navigation
+Info 2021_12_13 20_43_29: Moving mouse to ghe User link in organization navigation menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 20_44_31               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 20_44_31: Getting the chrome browser from xml
+Info 2021_12_13 20_44_34: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 20_44_37: Checking for page title
+
+Fatal 2021_12_13 20_44_39: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 20_44_39: Validating user name input field with empty data
+Info 2021_12_13 20_44_39: Sending user name value as ""
+
+Fatal 2021_12_13 20_44_39: Exception while validating user name with empty data: expected [Username is required] but found []
+
+Info 2021_12_13 20_44_40: Validating user name input field with an invalid data
+Info 2021_12_13 20_44_40: Sending user name input value as !@#$
+Info 2021_12_13 20_44_40: Validating the password input field with an empty date
+Info 2021_12_13 20_44_40: Sending password input value as ""
+Info 2021_12_13 20_44_40: Validating user name & password input field with an invalid data
+Info 2021_12_13 20_44_40: Sending user name as: qwerty
+Info 2021_12_13 20_44_40: Sending user name as: qwerty
+Info 2021_12_13 20_44_41: Clicking Login button
+Info 2021_12_13 20_44_51: Validating user name & password input field with an valid data
+Info 2021_12_13 20_44_51: Sending user name as: amazeqa
+Info 2021_12_13 20_44_51: Sending user name as: Password@1234
+
+****Initializing User Master Test Cases****
+Info 2021_12_13 20_45_07: Opening the left menu by clicking side toggle
+Info 2021_12_13 20_45_08: Navigating to Back office by clicking Back office menu
+Info 2021_12_13 20_45_08: Moving mouse to the Organization on header navigation
+Info 2021_12_13 20_45_12: Moving mouse to ghe User link in organization navigation menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 20_45_24               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 20_45_24: Getting the chrome browser from xml
+Info 2021_12_13 20_45_25: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 20_45_29: Checking for page title
+
+Fatal 2021_12_13 20_45_30: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 20_45_30: Validating user name input field with empty data
+Info 2021_12_13 20_45_30: Sending user name value as ""
+
+Fatal 2021_12_13 20_45_31: Exception while validating user name with empty data: expected [Username is required] but found []
+
+Info 2021_12_13 20_45_31: Validating user name input field with an invalid data
+Info 2021_12_13 20_45_31: Sending user name input value as !@#$
+Info 2021_12_13 20_45_31: Validating the password input field with an empty date
+Info 2021_12_13 20_45_31: Sending password input value as ""
+Info 2021_12_13 20_45_31: Validating user name & password input field with an invalid data
+Info 2021_12_13 20_45_32: Sending user name as: qwerty
+Info 2021_12_13 20_45_32: Sending user name as: qwerty
+Info 2021_12_13 20_45_32: Clicking Login button
+Info 2021_12_13 20_45_42: Validating user name & password input field with an valid data
+Info 2021_12_13 20_45_42: Sending user name as: amazeqa
+Info 2021_12_13 20_45_42: Sending user name as: Password@1234
+
+****Initializing User Master Test Cases****
+Info 2021_12_13 20_45_52: Opening the left menu by clicking side toggle
+Info 2021_12_13 20_45_52: Navigating to Back office by clicking Back office menu
+Info 2021_12_13 20_45_53: Moving mouse to the Organization on header navigation
+Info 2021_12_13 20_45_57: Moving mouse to ghe User link in organization navigation menu
+Info 2021_12_13 20_45_57: Clicking the User master link
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 20_54_01               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 20_54_01: Getting the chrome browser from xml
+Info 2021_12_13 20_54_03: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 20_54_07: Checking for page title
+
+Fatal 2021_12_13 20_54_08: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 20_54_08: Validating user name input field with empty data
+Info 2021_12_13 20_54_08: Sending user name value as ""
+Info 2021_12_13 20_54_08: Validating user name input field with an invalid data
+Info 2021_12_13 20_54_09: Sending user name input value as !@#$
+Info 2021_12_13 20_54_09: Validating the password input field with an empty date
+Info 2021_12_13 20_54_09: Sending password input value as ""
+Info 2021_12_13 20_54_09: Validating user name & password input field with an invalid data
+Info 2021_12_13 20_54_09: Sending user name as: qwerty
+Info 2021_12_13 20_54_09: Sending user name as: qwerty
+Info 2021_12_13 20_54_09: Clicking Login button
+Info 2021_12_13 20_54_19: Validating user name & password input field with an valid data
+Info 2021_12_13 20_54_20: Sending user name as: amazeqa
+Info 2021_12_13 20_54_20: Sending user name as: Password@1234
+
+****Initializing User Master Test Cases****
+Info 2021_12_13 20_54_37: Opening the left menu by clicking side toggle
+Info 2021_12_13 20_54_37: Navigating to Back office by clicking Back office menu
+Info 2021_12_13 20_54_37: Moving mouse to the Organization on header navigation
+Info 2021_12_13 20_54_41: Moving mouse to ghe User link in organization navigation menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 21_00_05               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 21_00_05: Getting the chrome browser from xml
+Info 2021_12_13 21_00_08: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 21_00_12: Checking for page title
+
+Fatal 2021_12_13 21_00_13: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 21_00_13: Validating user name input field with empty data
+Info 2021_12_13 21_00_13: Sending user name value as ""
+Info 2021_12_13 21_00_13: Validating user name input field with an invalid data
+Info 2021_12_13 21_00_13: Sending user name input value as !@#$
+Info 2021_12_13 21_00_13: Validating the password input field with an empty date
+Info 2021_12_13 21_00_13: Sending password input value as ""
+Info 2021_12_13 21_00_13: Validating user name & password input field with an invalid data
+Info 2021_12_13 21_00_14: Sending user name as: qwerty
+Info 2021_12_13 21_00_14: Sending user name as: qwerty
+Info 2021_12_13 21_00_14: Clicking Login button
+Info 2021_12_13 21_00_24: Validating user name & password input field with an valid data
+Info 2021_12_13 21_00_24: Sending user name as: amazeqa
+Info 2021_12_13 21_00_24: Sending user name as: Password@1234
+
+****Initializing User Master Test Cases****
+Info 2021_12_13 21_00_41: Opening the left menu by clicking side toggle
+Info 2021_12_13 21_00_41: Navigating to Back office by clicking Back office menu
+Info 2021_12_13 21_00_42: Moving mouse to the Organization on header navigation
+Info 2021_12_13 21_00_46: Moving mouse to ghe User link in organization navigation menu
+Info 2021_12_13 21_00_46: Clicking the User master link
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 21_03_33               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 21_03_33: Getting the chrome browser from xml
+Info 2021_12_13 21_03_35: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 21_03_40: Checking for page title
+
+Fatal 2021_12_13 21_03_41: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 21_03_41: Validating user name input field with empty data
+Info 2021_12_13 21_03_41: Sending user name value as ""
+Info 2021_12_13 21_03_41: Validating user name input field with an invalid data
+Info 2021_12_13 21_03_41: Sending user name input value as !@#$
+Info 2021_12_13 21_03_41: Validating the password input field with an empty date
+Info 2021_12_13 21_03_42: Sending password input value as ""
+Info 2021_12_13 21_03_42: Validating user name & password input field with an invalid data
+Info 2021_12_13 21_03_42: Sending user name as: qwerty
+Info 2021_12_13 21_03_42: Sending user name as: qwerty
+Info 2021_12_13 21_03_42: Clicking Login button
+
+****Initializing User Master Test Cases****
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 21_04_06               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 21_04_06: Getting the chrome browser from xml
+Info 2021_12_13 21_04_08: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 21_04_12: Checking for page title
+
+Fatal 2021_12_13 21_04_14: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 21_04_14: Validating user name input field with empty data
+Info 2021_12_13 21_04_14: Sending user name value as ""
+Info 2021_12_13 21_04_14: Validating user name input field with an invalid data
+Info 2021_12_13 21_04_14: Sending user name input value as !@#$
+Info 2021_12_13 21_04_14: Validating the password input field with an empty date
+Info 2021_12_13 21_04_15: Sending password input value as ""
+Info 2021_12_13 21_04_15: Validating user name & password input field with an invalid data
+Info 2021_12_13 21_04_15: Sending user name as: qwerty
+Info 2021_12_13 21_04_15: Sending user name as: qwerty
+Info 2021_12_13 21_04_15: Clicking Login button
+Info 2021_12_13 21_04_25: Validating user name & password input field with an valid data
+Info 2021_12_13 21_04_25: Sending user name as: amazeqa
+Info 2021_12_13 21_04_26: Sending user name as: Password@1234
+
+****Initializing User Master Test Cases****
+Info 2021_12_13 21_04_41: Opening the left menu by clicking side toggle
+Info 2021_12_13 21_04_42: Navigating to Back office by clicking Back office menu
+Info 2021_12_13 21_04_42: Moving mouse to the Organization on header navigation
+Info 2021_12_13 21_04_46: Moving mouse to ghe User link in organization navigation menu
+Info 2021_12_13 21_04_46: Clicking the User master link
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 21_06_32               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 21_06_32: Getting the chrome browser from xml
+Info 2021_12_13 21_06_35: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 21_06_40: Checking for page title
+
+Fatal 2021_12_13 21_06_41: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 21_06_41: Validating user name input field with empty data
+Info 2021_12_13 21_06_41: Sending user name value as ""
+Info 2021_12_13 21_06_41: Validating user name input field with an invalid data
+Info 2021_12_13 21_06_41: Sending user name input value as !@#$
+Info 2021_12_13 21_06_42: Validating the password input field with an empty date
+Info 2021_12_13 21_06_42: Sending password input value as ""
+Info 2021_12_13 21_06_42: Validating user name & password input field with an invalid data
+Info 2021_12_13 21_06_42: Sending user name as: qwerty
+Info 2021_12_13 21_06_42: Sending user name as: qwerty
+Info 2021_12_13 21_06_42: Clicking Login button
+Info 2021_12_13 21_06_52: Validating user name & password input field with an valid data
+Info 2021_12_13 21_06_53: Sending user name as: amazeqa
+Info 2021_12_13 21_06_53: Sending user name as: Password@1234
+
+****Initializing User Master Test Cases****
+Info 2021_12_13 21_07_04: Opening the left menu by clicking side toggle
+Info 2021_12_13 21_07_04: Navigating to Back office by clicking Back office menu
+Info 2021_12_13 21_07_04: Moving mouse to the Organization on header navigation
+Info 2021_12_13 21_07_09: Moving mouse to ghe User link in organization navigation menu
+Info 2021_12_13 21_07_09: Clicking the User master link
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 21_08_59               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 21_08_59: Getting the chrome browser from xml
+Info 2021_12_13 21_09_01: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 21_09_06: Checking for page title
+
+Fatal 2021_12_13 21_09_07: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 21_09_07: Validating user name input field with empty data
+Info 2021_12_13 21_09_07: Sending user name value as ""
+Info 2021_12_13 21_09_08: Validating user name input field with an invalid data
+Info 2021_12_13 21_09_08: Sending user name input value as !@#$
+Info 2021_12_13 21_09_08: Validating the password input field with an empty date
+Info 2021_12_13 21_09_08: Sending password input value as ""
+
+Fatal 2021_12_13 21_09_10: Exception while validating password input field with empty data: expected [Password is required] but found []
+
+Info 2021_12_13 21_09_10: Validating user name & password input field with an invalid data
+Info 2021_12_13 21_09_10: Sending user name as: qwerty
+Info 2021_12_13 21_09_10: Sending user name as: qwerty
+Info 2021_12_13 21_09_10: Clicking Login button
+Info 2021_12_13 21_09_20: Validating user name & password input field with an valid data
+Info 2021_12_13 21_09_20: Sending user name as: amazeqa
+Info 2021_12_13 21_09_21: Sending user name as: Password@1234
+
+****Initializing User Master Test Cases****
+Info 2021_12_13 21_09_31: Opening the left menu by clicking side toggle
+Info 2021_12_13 21_09_32: Navigating to Back office by clicking Back office menu
+Info 2021_12_13 21_09_32: Moving mouse to the Organization on header navigation
+Info 2021_12_13 21_09_36: Moving mouse to ghe User link in organization navigation menu
+Info 2021_12_13 21_09_36: Clicking the User master link
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 21_11_32               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 21_11_32: Getting the chrome browser from xml
+Resolution chrome=96 in cache (valid until 22:00:06 13/12/2021 IST)
+Resolution chrome96=96.0.4664.45 in cache (valid until 19:54:31 14/12/2021 IST)
+Using chromedriver 96.0.4664.45 (resolved driver for Chrome 96)
+Driver chromedriver 96.0.4664.45 found in cache
+Exporting webdriver.chrome.driver as C:\Users\KMIT\.cache\selenium\chromedriver\win32\96.0.4664.45\chromedriver.exe
+Info 2021_12_13 21_11_34: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 21_11_38: Checking for page title
+
+Fatal 2021_12_13 21_11_39: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 21_11_39: Validating user name input field with empty data
+Info 2021_12_13 21_11_39: Sending user name value as ""
+Info 2021_12_13 21_11_39: Validating user name input field with an invalid data
+Info 2021_12_13 21_11_39: Sending user name input value as !@#$
+Info 2021_12_13 21_11_39: Validating the password input field with an empty date
+Info 2021_12_13 21_11_39: Sending password input value as ""
+Info 2021_12_13 21_11_39: Validating user name & password input field with an invalid data
+Info 2021_12_13 21_11_40: Sending user name as: qwerty
+Info 2021_12_13 21_11_40: Sending user name as: qwerty
+Info 2021_12_13 21_11_40: Clicking Login button
+Info 2021_12_13 21_11_50: Validating user name & password input field with an valid data
+Info 2021_12_13 21_11_50: Sending user name as: amazeqa
+Info 2021_12_13 21_11_50: Sending user name as: Password@1234
+
+****Initializing User Master Test Cases****
+Info 2021_12_13 21_12_01: Opening the left menu by clicking side toggle
+Info 2021_12_13 21_12_01: Navigating to Back office by clicking Back office menu
+Info 2021_12_13 21_12_02: Moving mouse to the Organization on header navigation
+Info 2021_12_13 21_12_06: Moving mouse to ghe User link in organization navigation menu
+Info 2021_12_13 21_12_06: Clicking the User master link
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 21_14_11               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 21_14_11: Getting the chrome browser from xml
+Resolution chrome=96 in cache (valid until 22:00:06 13/12/2021 IST)
+Resolution chrome96=96.0.4664.45 in cache (valid until 19:54:31 14/12/2021 IST)
+Using chromedriver 96.0.4664.45 (resolved driver for Chrome 96)
+Driver chromedriver 96.0.4664.45 found in cache
+Exporting webdriver.chrome.driver as C:\Users\KMIT\.cache\selenium\chromedriver\win32\96.0.4664.45\chromedriver.exe
+Info 2021_12_13 21_14_13: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 21_14_18: Checking for page title
+
+Fatal 2021_12_13 21_14_19: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 21_14_19: Validating user name input field with empty data
+Info 2021_12_13 21_14_19: Sending user name value as ""
+
+Fatal 2021_12_13 21_14_20: Exception while validating user name with empty data: expected [Username is required] but found []
+
+Info 2021_12_13 21_14_20: Validating user name input field with an invalid data
+Info 2021_12_13 21_14_20: Sending user name input value as !@#$
+Info 2021_12_13 21_14_20: Validating the password input field with an empty date
+Info 2021_12_13 21_14_20: Sending password input value as ""
+Info 2021_12_13 21_14_20: Validating user name & password input field with an invalid data
+Info 2021_12_13 21_14_20: Sending user name as: qwerty
+Info 2021_12_13 21_14_20: Sending user name as: qwerty
+Info 2021_12_13 21_14_20: Clicking Login button
+Info 2021_12_13 21_14_31: Validating user name & password input field with an valid data
+Info 2021_12_13 21_14_31: Sending user name as: amazeqa
+Info 2021_12_13 21_14_31: Sending user name as: Password@1234
+
+****Initializing User Master Test Cases****
+Info 2021_12_13 21_14_42: Opening the left menu by clicking side toggle
+Info 2021_12_13 21_14_42: Navigating to Back office by clicking Back office menu
+Info 2021_12_13 21_14_42: Moving mouse to the Organization on header navigation
+Info 2021_12_13 21_14_46: Moving mouse to ghe User link in organization navigation menu
+Info 2021_12_13 21_14_47: Clicking the User master link
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+

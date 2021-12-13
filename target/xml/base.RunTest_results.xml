@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Amaze"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="34.339">
+  <properties />
+  
+  
+            <testcase name="ticketMaster" time="0.002" classname="base.RunTest" />
+                <testcase name="login" time="19.184" classname="base.RunTest" />
+                <testcase name="userMaster" time="15.153" classname="base.RunTest" />
+      
+</testsuite>

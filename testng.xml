@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Amaze Suite" parallel="tests" verbose="10" thread-count="5" >
+    <parameter name="browser" value="chrome" />
+    <parameter name="url" value="http://localhost:4200/#/" />
+    <parameter name="username" value="amazeqa" />
+    <parameter name="password" value="Password@1234" />
+    <test name="Amaze" thread-count="5">
+        <groups>
+            <run>
+                <include name="amazePOS.test.*" />
+            </run>
+        </groups>
+        <packages>
+            <package name="base" />
+        </packages>
+    </test>
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+    </listeners>
+</suite>
