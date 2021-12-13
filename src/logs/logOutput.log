@@ -2110,3 +2110,54 @@ X
 X
 
 
+
+
+****************************************************************************************
+****************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$             Amaze Test Suite               $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$             2021_12_13 21_20_44               $$$$$$$$$$$$$$$$$$$$$$$$$
+****************************************************************************************
+****************************************************************************************
+
+
+Info 2021_12_13 21_20_44: Getting the chrome browser from xml
+Resolution chrome=96 in cache (valid until 22:00:06 13/12/2021 IST)
+Resolution chrome96=96.0.4664.45 in cache (valid until 19:54:31 14/12/2021 IST)
+Using chromedriver 96.0.4664.45 (resolved driver for Chrome 96)
+Driver chromedriver 96.0.4664.45 found in cache
+Exporting webdriver.chrome.driver as C:\Users\KMIT\.cache\selenium\chromedriver\win32\96.0.4664.45\chromedriver.exe
+Info 2021_12_13 21_20_47: open the chrome driver
+
+****Initializing Login Test Cases****
+Info 2021_12_13 21_20_51: Checking for page title
+
+Fatal 2021_12_13 21_20_52: Exception while checking page title: expected [Amaze POs] but found [Amaze POS]
+
+Info 2021_12_13 21_20_52: Validating user name input field with empty data
+Info 2021_12_13 21_20_52: Sending user name value as ""
+Info 2021_12_13 21_20_52: Validating user name input field with an invalid data
+Info 2021_12_13 21_20_52: Sending user name input value as !@#$
+Info 2021_12_13 21_20_52: Validating the password input field with an empty date
+Info 2021_12_13 21_20_53: Sending password input value as ""
+Info 2021_12_13 21_20_53: Validating user name & password input field with an invalid data
+Info 2021_12_13 21_20_53: Sending user name as: qwerty
+Info 2021_12_13 21_20_53: Sending user name as: qwerty
+Info 2021_12_13 21_20_53: Clicking Login button
+Info 2021_12_13 21_21_03: Validating user name & password input field with an valid data
+Info 2021_12_13 21_21_03: Sending user name as: amazeqa
+Info 2021_12_13 21_21_04: Sending user name as: Password@1234
+
+****Initializing User Master Test Cases****
+Info 2021_12_13 21_21_20: Opening the left menu by clicking side toggle
+Info 2021_12_13 21_21_21: Navigating to Back office by clicking Back office menu
+Info 2021_12_13 21_21_21: Moving mouse to the Organization on header navigation
+Info 2021_12_13 21_21_25: Moving mouse to ghe User link in organization navigation menu
+
+
+XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+X
+X
+X
+X
+
+
