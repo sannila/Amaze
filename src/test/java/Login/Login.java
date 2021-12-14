@@ -15,6 +15,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
+import utils.ConfigFileReader;
 import utils.Highlighter;
 import utils.Screenshot;
 
@@ -44,6 +45,7 @@ public class Login extends Config {
     static Screenshot takeScreenshot = new Screenshot();
     static Highlighter highlighter = new Highlighter();
     static CommonWebDrivers commonWebDrivers = new CommonWebDrivers();
+    ConfigFileReader configFileReader = new ConfigFileReader("src/main/resources/POS/posValidationMessages.properties");
 
     /**
      * login constructor which initiates the PageFactory
@@ -63,7 +65,7 @@ public class Login extends Config {
     public void pageTitle() throws InterruptedException {
         config.info(config.dateTime(), "Checking for page title");
         try {
-            Assert.assertEquals(driver.getTitle(), "Amaze POs");
+            Assert.assertEquals(driver.getTitle(), configFileReader.getPropertyValue("posTitle"));
         } catch (AssertionError e) {
             takeScreenshot.takeScreenshot(driver, "Login", "pageTitle", "Page Title");
             config.fatal(config.dateTime(), ("Exception while checking page title: " + e.getMessage()));
@@ -80,7 +82,7 @@ public class Login extends Config {
         username.sendKeys(Keys.TAB);
         config.info(config.dateTime(), "Sending user name value as \"\"");
         try {
-            Assert.assertEquals(usernameRequiredError.getText(), "Username is requireds");
+            Assert.assertEquals(usernameRequiredError.getText(), configFileReader.getPropertyValue("emptyUserName"));
         } catch (AssertionError e) {
 
             /**
@@ -109,7 +111,7 @@ public class Login extends Config {
         username.sendKeys(invalid_input);
         config.info(config.dateTime(), ("Sending user name input value as " + invalid_input));
         try {
-            Assert.assertEquals(usernamePatternError.getText(), "Enter a valid username");
+            Assert.assertEquals(usernamePatternError.getText(), configFileReader.getPropertyValue("invalidUseName"));
         } catch (AssertionError e) {
             highlighter.setHighLighter(driver, usernamePatternError);
             takeScreenshot.takeScreenshot(driver, "Login", "userName_validation_pattern", "userName_validation_pattern");
@@ -127,7 +129,7 @@ public class Login extends Config {
         password.sendKeys(Keys.TAB);
         config.info(config.dateTime(), ("Sending password input value as \"\""));
         try {
-            Assert.assertEquals(passwordRequiredError.getText(), "Password is required");
+            Assert.assertEquals(passwordRequiredError.getText(), configFileReader.getPropertyValue("emptyPassword"));
         } catch (AssertionError e) {
             highlighter.setHighLighter(driver, passwordRequiredError);
             takeScreenshot.takeScreenshot(driver, "Login", "password_validation_empty", "password_validation_empty");
@@ -159,7 +161,7 @@ public class Login extends Config {
         wait.until(ExpectedConditions.urlContains(url));
         try {
             Assert.assertEquals(driver.getCurrentUrl(), url);
-            Assert.assertEquals(commonWebDrivers.snackBarMessage(), "Invalid username or password");
+            Assert.assertEquals(commonWebDrivers.snackBarMessage(), configFileReader.getPropertyValue("invalidPassword"));
         } catch (AssertionError e) {
             takeScreenshot.takeScreenshot(driver, "Login", "invalid_username_password", "invalid_username_password");
             config.fatal(config.dateTime(), ("Exception while validating username and password with invalid data: " + e.getMessage()));
@@ -183,10 +185,10 @@ public class Login extends Config {
         config.info(config.dateTime(), ("Sending user name as: " + pwd));
 
         submit_button.click();
-        wait.until(ExpectedConditions.urlContains(url + "pages/dashboard/project"));
+        wait.until(ExpectedConditions.urlContains(url + configFileReader.getPropertyValue("dashboard")));
 
         try {
-            Assert.assertEquals(driver.getCurrentUrl(), url + "pages/dashboard/project");
+            Assert.assertEquals(driver.getCurrentUrl(), url + configFileReader.getPropertyValue("dashboard"));
         } catch (Throwable e) {
             takeScreenshot.takeScreenshot(driver, "Login", "valid_login", "valid_login");
             config.fatal(config.dateTime(), ("Exception after valid login: " + e.getMessage()));

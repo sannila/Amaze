@@ -17,11 +17,6 @@ public class RunTest extends Config {
         login.login_test(url, username, password);
     }
 
-//    @Test(groups = "amazePOS.test.login.pageTitle", priority = 1)
-//    public void pageTitle() throws InterruptedException {
-//        login.pageTitle();
-//    }
-
     @Test(groups = "amazePOS.test.ticketMaster", priority = 2)
     public void ticketMaster(){
         TicketMaster tm = new TicketMaster();

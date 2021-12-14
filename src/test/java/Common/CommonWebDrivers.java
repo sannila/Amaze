@@ -15,6 +15,8 @@ public class CommonWebDrivers extends Config {
         return driver.findElement(By.className("toggle-sidebar-folded"));
     }
 
+    public static WebElement toggle_sidebar_2(){ return driver.findElement(By.xpath("//*[text()='chevron_right']"));}
+
     /**
      * Element of Back office link in the left menu
      * @return
@@ -42,6 +44,10 @@ public class CommonWebDrivers extends Config {
     public static String snackBarMessage(){
         String message = driver.findElement(By.xpath("//simple-snack-bar//span[text()=\"Incorrect username or password.\"]")).getText();
         return message;
+    }
+
+    public static WebElement addNewButton(){
+        return driver.findElement(By.className("addNewButton"));
     }
 
 }

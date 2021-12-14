@@ -8,7 +8,7 @@
     <test name="Amaze" thread-count="5">
         <groups>
             <run>
-                <include name="amazePOS.test.*" />
+                <include name="amazePOS.test.userMaster" />
             </run>
         </groups>
         <packages>
