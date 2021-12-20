@@ -1,13 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Amaze"
            tests="1"
-           failures="0"
+           failures="1"
            errors="0"
            skipped="0"
-           time="26.751">
+           time="68.668">
   <properties />
+            <testcase name="userMaster" time="68.668" classname="base.RunTest">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.mat\-error&quot;}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-2LHDPM7&apos;, ip: &apos;192.168.168.37&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KMIT\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58848}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fda30d1e4c2285455d119d8779c3cab
+*** Element info: {Using=class name, value=mat-error}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".mat\-error"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-2LHDPM7', ip: '192.168.168.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KMIT\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58848}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fda30d1e4c2285455d119d8779c3cab
+*** Element info: {Using=class name, value=mat-error}
+  java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+  java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:405)
+  org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+  org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+  org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+  jdk.proxy2/jdk.proxy2.$Proxy14.getText(Unknown Source)
+  Common.InputFields.inputField_with_invalidData(InputFields.java:104)
+  UserMaster.UserMaster.firstName(UserMaster.java:165)
+  UserMaster.UserMaster.userMaster_test(UserMaster.java:233)
+  base.RunTest.userMaster(RunTest.java:30)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:568)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  org.testng.TestRunner.privateRun(TestRunner.java:756)
+  org.testng.TestRunner.run(TestRunner.java:610)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="userMaster" time="26.751" classname="base.RunTest" />
-      
+  
 </testsuite>

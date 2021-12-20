@@ -17,6 +17,7 @@ import org.testng.annotations.*;
 import utils.Log;
 import utils.POSData;
 import utils.Screenshot;
+import utils.SendMail;
 
 import java.io.File;
 import java.time.LocalDateTime;
@@ -30,6 +31,7 @@ public class Config {
     public static String customer_name;
     public static Logger log = Logger.getLogger(Config.class);
     public static POSData posData = new POSData();
+    public static SendMail sendMail = new SendMail();
 
     /**
      * this method will run once the first
@@ -38,12 +40,12 @@ public class Config {
     @Parameters({"browser", "url"})
     public void openDriver(String browser, String url) {
         System.out.println("User Name: " + posData.getSheet("Login", 1, 0));
-        PropertyConfigurator.configure("src/main/resources/log4j.properties");
+        PropertyConfigurator.configure("src/main/resources/log4jHTML.properties");
 
         startTestCase("Amaze Test Suite", dateTime());
 
-        String filePath = "src\\FailureScreenshot";
-        File file = new File(filePath);
+        String screenshot_filePath = "src\\FailureScreenshot";
+        File file = new File(screenshot_filePath);
         deleteDir(file);
         file.delete();
 
@@ -82,6 +84,7 @@ public class Config {
          */
         driver.quit();
         endTestCase("Amaze Test Suite");
+        sendMail.mailFunction();
     }
 
 

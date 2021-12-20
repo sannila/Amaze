@@ -8,6 +8,14 @@ import org.openqa.selenium.support.FindBy;
 public class CommonWebDrivers extends Config {
 
     /**
+     * Element of loader
+     */
+    public static WebElement hexaLoader(){
+        return driver.findElement(By.id("hex_loader"));
+    }
+
+
+    /**
      * Element of Left menu toggle button
      * @return
      */
@@ -48,6 +56,10 @@ public class CommonWebDrivers extends Config {
 
     public static WebElement addNewButton(){
         return driver.findElement(By.className("addNewButton"));
+    }
+
+    public static WebElement h2(){
+        return driver.findElement(By.className("h2"));
     }
 
 }
