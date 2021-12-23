@@ -61,16 +61,23 @@ public class SendMail {
             MimeBodyPart messageBodyPart2 = new MimeBodyPart();
 
             // Mention the file which you want to send
-            String fileName = "src/logs/application.html";
+            String log_file = "src/logs/application.html";
 
             // Create data source and pass the filename
-            DataSource source = new FileDataSource(fileName);
+            DataSource source = new FileDataSource(log_file);
 
             // set the handler
             messageBodyPart2.setDataHandler(new DataHandler(source));
 
             // set the file
-            messageBodyPart2.setFileName(fileName);
+            messageBodyPart2.setFileName(log_file);
+
+            MimeBodyPart messageBodyPart3 = new MimeBodyPart();
+            String zip_file = "src/zipFolder/failedScreenshots.zip";
+            DataSource source1 = new FileDataSource(zip_file);
+            messageBodyPart3.setDataHandler(new DataHandler(source1));
+            messageBodyPart3.setFileName(zip_file);
+
 
             // Create object of MimeMultipart class
             Multipart multipart = new MimeMultipart();
@@ -80,6 +87,8 @@ public class SendMail {
 
             // add body part 2
             multipart.addBodyPart(messageBodyPart1);
+
+            multipart.addBodyPart(messageBodyPart3);
 
             // set the content
             message.setContent(multipart);

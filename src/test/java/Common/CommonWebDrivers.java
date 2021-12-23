@@ -54,6 +54,11 @@ public class CommonWebDrivers extends Config {
         return message;
     }
 
+
+    public WebElement getSnackBar(){
+        return driver.findElement(By.className("snackBar-message"));
+    }
+
     public static WebElement addNewButton(){
         return driver.findElement(By.className("addNewButton"));
     }

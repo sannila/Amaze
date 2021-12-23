@@ -14,6 +14,7 @@ import org.testng.Assert;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import org.zeroturnaround.zip.ZipUtil;
 import utils.Log;
 import utils.POSData;
 import utils.Screenshot;
@@ -32,6 +33,8 @@ public class Config {
     public static Logger log = Logger.getLogger(Config.class);
     public static POSData posData = new POSData();
     public static SendMail sendMail = new SendMail();
+
+    public String testCaseResult[];
 
     /**
      * this method will run once the first
@@ -83,6 +86,7 @@ public class Config {
          * this will close all the active WebDriver instance
          */
         driver.quit();
+        zipFolder(new File("src\\FailureScreenshot"));
         endTestCase("Amaze Test Suite");
         sendMail.mailFunction();
     }
@@ -102,6 +106,13 @@ public class Config {
             clickImage.takeScreenshot(driver, className, methodName, dateTime());
 //            System.out.println("Class Name: " + className + "\n" + "Method Name: " + methodName + "\nDate: " + dateTime());
         }
+    }
+
+    public String getEmailId(){
+        DateTimeFormatter dateTime = DateTimeFormatter.ofPattern("yyyyMMMdd_HH_mm_ss");
+        LocalDateTime localDateTime = LocalDateTime.now();
+        String email = dateTime.format(localDateTime)+ "@kmitsolutions.com";
+        return email;
     }
 
 
@@ -151,6 +162,10 @@ public class Config {
         }
     }
 
+    /**
+     * delete the directory
+     * @param file
+     */
     public void deleteDir(File file) {
 
         if (file.exists()) {
@@ -161,6 +176,17 @@ public class Config {
                 subFiles.delete();
             }
         }
+    }
+
+    /**
+     * Make the failed screenshot folder zipped
+     */
+    public void zipFolder(File file){
+        deleteDir(new File("src\\zipFolder"));
+        if(file.exists()){
+            ZipUtil.pack(file, new File("src\\zipFolder\\failedScreenshots.zip"));
+        }
+
     }
 
 

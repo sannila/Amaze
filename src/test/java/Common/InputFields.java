@@ -2,15 +2,20 @@ package Common;
 
 
 import base.Config;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import utils.ConfigFileReader;
 import utils.Highlighter;
 import utils.Screenshot;
+
+import javax.lang.model.element.Element;
 
 public class InputFields extends Config {
 
@@ -47,16 +52,36 @@ public class InputFields extends Config {
         ele.sendKeys(Keys.TAB);
 
         config.info(config.dateTime(), "Valid data send to the " + inputFieldName + " input field: " + validData);
-        Boolean isErrorDisplayed = matError_ele.isDisplayed();
+        Boolean isErrorDisplayed = isElementPresent(matError_ele);
         try {
             Assert.assertEquals(isErrorDisplayed, Boolean.FALSE);
         } catch (AssertionError e) {
             highlighter.setHighLighter(driver, ele);
             highlighter.setHighLighter(driver, matError_ele);
             screenshot.takeScreenshot(driver, getClassName(), inputFieldName, (methodName + "validData"));
-            config.fatal(config.dateTime(), inputFieldName + " should not validate with valid data: " + validData);
+            config.fatal(config.dateTime(), inputFieldName + " should not validate with valid data: " + validData + " " + e.getMessage());
             highlighter.clearHighLighter(driver, ele);
             highlighter.clearHighLighter(driver, matError_ele);
+        } catch (NoSuchElementException e){
+            System.out.println("");
+        }
+    }
+
+    public String isButtonEnabled(WebElement btn_ele){
+        String status;
+        if(btn_ele.isEnabled()){
+            return status = "Enabled";
+        } else {
+            return status = "Disabled";
+        }
+    }
+
+    public boolean isElementPresent(WebElement ele){
+        try {
+            ele.isDisplayed();
+            return true;
+        } catch (NoSuchElementException e){
+            return false;
         }
     }
 
@@ -72,12 +97,15 @@ public class InputFields extends Config {
         ele.clear();
         ele.sendKeys(Keys.TAB);
         try {
-            Assert.assertEquals(matError_ele.getText(), propertyKey);
+            Assert.assertEquals(matError_ele.getText(), configFileReader.getPropertyValue(propertyKey));
+        } catch (NoSuchElementException e) {
+            screenshot.takeScreenshot(driver, getClassName(), inputFieldName, (methodName + "_emptyData"));
+            config.fatal(config.dateTime(), inputFieldName + " validation is not found for empty data: " + e.getMessage());
         } catch (AssertionError e) {
             highlighter.setHighLighter(driver, ele);
             highlighter.setHighLighter(driver, matError_ele);
             screenshot.takeScreenshot(driver, getClassName(), inputFieldName, (methodName + "_emptyData"));
-            config.fatal(config.dateTime(), inputFieldName + " input field validation is not proper for given data: " + e.getMessage());
+            config.fatal(config.dateTime(), inputFieldName + " input field validation is not proper for empty field: " + e.getMessage());
             highlighter.clearHighLighter(driver, ele);
             highlighter.clearHighLighter(driver, matError_ele);
         }
@@ -102,7 +130,10 @@ public class InputFields extends Config {
 
             try {
                 Assert.assertEquals(matError_ele.getText(), configFileReader.getPropertyValue(propertyKey));
-            } catch (AssertionError e) {
+            } catch (NoSuchElementException e) {
+                screenshot.takeScreenshot(driver, getClassName(), inputFieldName, (methodName + "_invalidData"));
+                config.fatal(config.dateTime(), inputFieldName + " validation is not found for invalid data: " + e.getMessage());
+            }  catch (AssertionError e) {
                 highlighter.setHighLighter(driver, ele);
                 highlighter.setHighLighter(driver, matError_ele);
                 screenshot.takeScreenshot(driver, getClassName(), inputFieldName, (methodName + "_" + i));
@@ -111,6 +142,14 @@ public class InputFields extends Config {
                 highlighter.clearHighLighter(driver, matError_ele);
             }
         }
+    }
+
+    public boolean checkBox_isChecked(WebElement ele){
+         if(ele.isSelected()){
+             return true;
+         } else {
+             return false;
+         }
     }
 
     public String getClassName() {

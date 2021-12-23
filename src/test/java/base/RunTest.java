@@ -1,6 +1,7 @@
 package base;
 
 import UserMaster.UserMaster;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import Login.Login;
@@ -29,4 +30,5 @@ public class RunTest extends Config {
         UserMaster userMaster = new UserMaster();
         userMaster.userMaster_test(url, username, password);
     }
+
 }
