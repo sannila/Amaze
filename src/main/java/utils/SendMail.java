@@ -1,10 +1,17 @@
 package utils;
 
+import org.apache.commons.compress.harmony.pack200.PackingUtils;
+
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
 import javax.mail.*;
 import javax.mail.internet.*;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 
@@ -73,11 +80,20 @@ public class SendMail {
             messageBodyPart2.setFileName(log_file);
 
             MimeBodyPart messageBodyPart3 = new MimeBodyPart();
-            String zip_file = "src/zipFolder/failedScreenshots.zip";
-            DataSource source1 = new FileDataSource(zip_file);
-            messageBodyPart3.setDataHandler(new DataHandler(source1));
-            messageBodyPart3.setFileName(zip_file);
+            String zip_file = "No Screenshots Found";
+            long kilobytes = 0;
+            if(new File(zip_file).exists()){
+                zip_file = "src/zipFolder/failedScreenshots.zip";
+                Path path = Paths.get(zip_file);
+                long bytes = Files.size(path);
+                kilobytes = (bytes / 1024);
+                System.out.println("File size 1: " + String.format("%,d bytes", kilobytes));
+                System.out.println("File size 2: " + String.format("%,d kilobytes", kilobytes / 1024));
 
+                DataSource source1 = new FileDataSource(zip_file);
+                messageBodyPart3.setDataHandler(new DataHandler(source1));
+                messageBodyPart3.setFileName(zip_file);
+            }
 
             // Create object of MimeMultipart class
             Multipart multipart = new MimeMultipart();
@@ -88,7 +104,13 @@ public class SendMail {
             // add body part 2
             multipart.addBodyPart(messageBodyPart1);
 
-            multipart.addBodyPart(messageBodyPart3);
+            if(new File(zip_file).exists() && kilobytes <= 20) {
+                multipart.addBodyPart(messageBodyPart3);
+            } else {
+                messageBodyPart3.setText("***********************************\n***********************************\n***********************************" +
+                        "Screenshot is not found or may the size is greater than 20MB, Kindly check or the log files" +
+                        "***********************************\n***********************************\n***********************************");
+            }
 
             // set the content
             message.setContent(multipart);
@@ -102,6 +124,8 @@ public class SendMail {
         } catch (AddressException e) {
             e.printStackTrace();
         } catch (MessagingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
