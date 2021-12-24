@@ -39,7 +39,7 @@ public class SendMail {
 
         // This will handle the complete authentication
         Session session = Session.getDefaultInstance(prop,
-                new javax.mail.Authenticator(){
+                new Authenticator(){
                     protected PasswordAuthentication getPasswordAuthentication(){
                         return new PasswordAuthentication("sanjaim@kmitsolutions.com", "wuiljdwypwemamra");
                     }
@@ -80,15 +80,28 @@ public class SendMail {
             messageBodyPart2.setFileName(log_file);
 
             MimeBodyPart messageBodyPart3 = new MimeBodyPart();
-            String zip_file = "No Screenshots Found";
+            String zip_file = "src/zipFolder/failedScreenshots.zip";
+
+            /**
+             * Check for failed screenshot is exists
+             * and
+             * its size
+             */
+            File file = new File(zip_file);
             long kilobytes = 0;
-            if(new File(zip_file).exists()){
-                zip_file = "src/zipFolder/failedScreenshots.zip";
-                Path path = Paths.get(zip_file);
-                long bytes = Files.size(path);
-                kilobytes = (bytes / 1024);
-                System.out.println("File size 1: " + String.format("%,d bytes", kilobytes));
-                System.out.println("File size 2: " + String.format("%,d kilobytes", kilobytes / 1024));
+            long megabytes = 0;
+            if(file.exists()){
+//                zip_file = "src/zipFolder/failedScreenshots.zip";
+//                Path path = Paths.get(zip_file);
+//                long bytes = Files.size(path);
+//                kilobytes = (bytes / 1024);
+
+                long bytes = file.length();
+                kilobytes = (bytes/1024);
+                megabytes = (kilobytes/1024);
+
+                System.out.println("File size 1: " + String.format("%,d bytes", kilobytes) + "::- " + kilobytes);
+                System.out.println("File size 2: " + String.format("%,d megabytes", megabytes) + "::- " + megabytes);
 
                 DataSource source1 = new FileDataSource(zip_file);
                 messageBodyPart3.setDataHandler(new DataHandler(source1));
@@ -104,14 +117,23 @@ public class SendMail {
             // add body part 2
             multipart.addBodyPart(messageBodyPart1);
 
-            if(new File(zip_file).exists() && kilobytes <= 20) {
-                multipart.addBodyPart(messageBodyPart3);
+            /**
+             * Attach the failed screenshot zip file
+             * only if the zip file size is less than or equal to 20 MB
+             */
+            if(file.exists()) {
+                System.out.println("Failed screenshot file is exists");
+                if( Integer.parseInt(String.valueOf(megabytes)) <= 20) {
+                    System.out.println("File size: " + megabytes);
+                    multipart.addBodyPart(messageBodyPart3);
+                } else {
+                    messageBodyPart3.setText("Screenshot file size may be greater than 20MB, Kindly check or the log files");
+                }
             } else {
-                messageBodyPart3.setText("***********************************\n***********************************\n***********************************" +
-                        "Screenshot is not found or may the size is greater than 20MB, Kindly check or the log files" +
-                        "***********************************\n***********************************\n***********************************");
-            }
+                messageBodyPart3.setText("Screenshot is not found, Kindly check or the log files");
 
+            }
+            multipart.addBodyPart(messageBodyPart3);
             // set the content
             message.setContent(multipart);
 
@@ -124,8 +146,6 @@ public class SendMail {
         } catch (AddressException e) {
             e.printStackTrace();
         } catch (MessagingException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
             e.printStackTrace();
         }
     }

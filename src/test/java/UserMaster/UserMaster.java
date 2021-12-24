@@ -337,7 +337,7 @@ public class UserMaster extends Config {
     public void userName() {
         config.info(config.dateTime(), "Validating User Name input field");
         inputFields.inputField_with_emptyData(userName_ele, "User Name", "userNameRequired", "userName");
-//        inputFields.inputField_with_invalidData(userName_ele, "User Name", "userNameInvalid", "userName");
+        inputFields.inputField_with_invalidData(userName_ele, "User Name", "userNameInvalid", "userName");
         inputFields.inputField_with_validData(userName_ele, "User Name", fName, "userName");
     }
 

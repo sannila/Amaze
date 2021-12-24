@@ -7,13 +7,15 @@
            time="0.000">
   <properties />
             <testcase name="closeDriver" time="0.000" classname="base.Config">
-                <failure type="java.lang.NullPointerException"
-                  message="Cannot read the array length because &quot;&lt;local2&gt;&quot; is null"
+                <failure type="java.lang.NumberFormatException"
+                  message="For input string: &quot;0 megabytes&quot;"
               >
-<![CDATA[java.lang.NullPointerException: Cannot read the array length because "<local2>" is null
-  base.Config.deleteDir(Config.java:163)
-  base.Config.zipFolder(Config.java:176)
-  base.Config.closeDriver(Config.java:87)
+<![CDATA[java.lang.NumberFormatException: For input string: "0 megabytes"
+  java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+  java.base/java.lang.Integer.parseInt(Integer.java:668)
+  java.base/java.lang.Integer.parseInt(Integer.java:786)
+  utils.SendMail.mailFunction(SendMail.java:124)
+  base.Config.closeDriver(Config.java:91)
   java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
   java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
