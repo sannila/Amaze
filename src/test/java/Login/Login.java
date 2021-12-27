@@ -46,6 +46,7 @@ public class Login extends Config {
     static Highlighter highlighter = new Highlighter();
     static CommonWebDrivers commonWebDrivers = new CommonWebDrivers();
     ConfigFileReader configFileReader = new ConfigFileReader("src/main/resources/POS/posValidationMessages.properties");
+    public static String organizationName;
 
     /**
      * login constructor which initiates the PageFactory
@@ -161,7 +162,7 @@ public class Login extends Config {
         wait.until(ExpectedConditions.urlContains(url));
         try {
             Assert.assertEquals(driver.getCurrentUrl(), url);
-            Assert.assertEquals(commonWebDrivers.snackBarMessage(), configFileReader.getPropertyValue("invalidPassword"));
+            Assert.assertEquals(commonWebDrivers.getSnackBar().getText(), configFileReader.getPropertyValue("invalidPassword"));
         } catch (AssertionError e) {
             takeScreenshot.takeScreenshot(driver, "Login", "invalid_username_password", "invalid_username_password");
             config.fatal(config.dateTime(), ("Exception while validating username and password with invalid data: " + e.getMessage()));
@@ -193,7 +194,6 @@ public class Login extends Config {
             takeScreenshot.takeScreenshot(driver, "Login", "valid_login", "valid_login");
             config.fatal(config.dateTime(), ("Exception after valid login: " + e.getMessage()));
         }
-
     }
 
 

@@ -17,7 +17,7 @@ public class CommonWebDrivers extends Config {
 
     /**
      * Element of Left menu toggle button
-     * @return
+     *
      */
     public static WebElement toggle_sidebar() {
         return driver.findElement(By.className("toggle-sidebar-folded"));
@@ -27,7 +27,7 @@ public class CommonWebDrivers extends Config {
 
     /**
      * Element of Back office link in the left menu
-     * @return
+     *
      */
     public static WebElement backOffice_menu() {
         return driver.findElement(By.xpath("//*[text()=' Back Office ']"));
@@ -35,7 +35,7 @@ public class CommonWebDrivers extends Config {
 
     /**
      * Element for organization navigation link in the back office header
-     * @return
+     *
      */
     public static WebElement organization_nav(){
         return driver.findElement(By.xpath("//*[text()='Organization']"));
@@ -43,7 +43,7 @@ public class CommonWebDrivers extends Config {
 
     /**
      * Element for the show filter button of the list page
-     * @return
+     *
      */
     public static WebElement showFilterButton(){
         return driver.findElement(By.xpath("//*[text()=' Show Filter ']"));
@@ -67,4 +67,11 @@ public class CommonWebDrivers extends Config {
         return driver.findElement(By.className("h2"));
     }
 
+    public static WebElement getUserName(){
+        return driver.findElement(By.className("username"));
+    }
+
+    public static WebElement getOrganizationName(){
+        return driver.findElement(By.className("organization_class"));
+    }
 }

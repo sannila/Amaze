@@ -110,6 +110,7 @@ public class UserMaster extends Config {
     Faker faker = new Faker(new Locale("en-US"));
     InputFields inputFields = new InputFields();
     public static String email;
+    static String orgName;
 
     //    driver wait object
     static WebDriverWait wait;
@@ -127,6 +128,7 @@ public class UserMaster extends Config {
      * @throws InterruptedException
      */
     public void navigate_to_userMaster(String url) throws InterruptedException {
+        System.out.println("organization Name: " + orgName);
         wait.until(ExpectedConditions.invisibilityOf(commonWebDrivers.hexaLoader()));
         wait.until(ExpectedConditions.elementToBeClickable(commonWebDrivers.toggle_sidebar_2()));
         config.info(config.dateTime(), "Opening the left menu by clicking side toggle");
@@ -206,7 +208,17 @@ public class UserMaster extends Config {
         }
     }
 
+    public void getOrganizationName() throws InterruptedException {
+        commonWebDrivers.getUserName().click();
+        Thread.sleep(2000);
+        orgName = commonWebDrivers.getOrganizationName().getText();
+        Thread.sleep(2000);
+        commonWebDrivers.getOrganizationName().click();
+        Thread.sleep(2000);
+    }
+
     public void createButtonsStatus(){
+        System.out.println("Organization Name: " + orgName);
         config.info(config.dateTime(), "Validating create button's default status");
         System.out.println("Create button: "+ inputFields.isButtonEnabled(createBtn_ele));
 
@@ -506,6 +518,7 @@ public class UserMaster extends Config {
             login.valid_login(username, password, url);
         }
 //        Thread.sleep(5000);
+        getOrganizationName();
         navigate_to_userMaster(url);
         checkAddNewButton();
         navigateToNewUserScreen();
