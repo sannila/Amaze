@@ -68,11 +68,10 @@ public class InputFields extends Config {
     }
 
     public String isButtonEnabled(WebElement btn_ele){
-        String status;
         if(btn_ele.isEnabled()){
-            return status = "Enabled";
+            return "Enabled";
         } else {
-            return status = "Disabled";
+            return "Disabled";
         }
     }
 

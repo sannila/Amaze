@@ -183,7 +183,7 @@ public class Login extends Config {
 
         password.clear();
         password.sendKeys(pwd);
-        config.info(config.dateTime(), ("Sending user name as: " + pwd));
+        config.info(config.dateTime(), ("Sending password as: " + pwd));
 
         submit_button.click();
         wait.until(ExpectedConditions.urlContains(url + configFileReader.getPropertyValue("dashboard")));

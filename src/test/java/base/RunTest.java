@@ -1,5 +1,6 @@
 package base;
 
+import UserMaster.UserMasterCopyCreate;
 import UserMaster.UserMasterEditUpdate;
 import UserMaster.UserMasterNew;
 import org.testng.annotations.DataProvider;
@@ -37,6 +38,13 @@ public class RunTest extends Config {
     public void userMasterEdit(String url, String username, String password) throws InterruptedException {
         UserMasterEditUpdate userMasterEditUpdate = new UserMasterEditUpdate();
         userMasterEditUpdate.userMasterEdit_test(url, username, password);
+    }
+
+    @Test(groups = "amazePOS.test.user.copy", priority = 5)
+    @Parameters({"url", "username", "password"})
+    public void userMasterCopy(String url, String username, String password) throws InterruptedException {
+        UserMasterCopyCreate userMasterCopyCreate = new UserMasterCopyCreate();
+        userMasterCopyCreate.userMasterCopyCreate_Test(url, username, password);
     }
 
 }

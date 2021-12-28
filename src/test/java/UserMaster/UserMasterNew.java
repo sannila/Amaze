@@ -167,27 +167,27 @@ public class UserMasterNew extends Config {
 
     public void navigate_to_backOffice(String url) throws InterruptedException {
         wait.until(ExpectedConditions.invisibilityOf(commonWebDrivers.hexaLoader()));
-        wait.until(ExpectedConditions.elementToBeClickable(commonWebDrivers.toggle_sidebar_2()));
+//        wait.until(ExpectedConditions.elementToBeClickable(commonWebDrivers.toggle_sidebar_right()));
         config.info(config.dateTime(), "Opening the left menu by clicking side toggle");
         Thread.sleep(5000);
-        commonWebDrivers.toggle_sidebar().click();
+
+        if (commonWebDrivers.toggle_sidebar_right().isDisplayed()) {
+            commonWebDrivers.toggle_sidebar_right().click();
+        } else {
+            commonWebDrivers.toggle_sidebar_left().click();
+        }
 
         config.info(config.dateTime(), "Navigating to Back office by clicking Back office menu");
         commonWebDrivers.backOffice_menu().click();
 
         wait.until(ExpectedConditions.invisibilityOf(commonWebDrivers.hexaLoader()));
-        Thread.sleep(2000);
+        commonWebDrivers.toggle_sidebar_left().click();
         config.info(config.dateTime(), "Checking for the back office landing page url");
         try {
             Assert.assertEquals(driver.getCurrentUrl(), (url + configFileReader.getPropertyValue("backOfficeLandingPage")));
         } catch (AssertionError e) {
             screenshot.takeScreenshot(driver, "UserMaster", "Navigate to user master", "backofficeLandingPageUrl");
             config.fatal(config.dateTime(), "Back Office landing page url is not proper: " + e.getMessage());
-        }
-        if(commonWebDrivers.toggle_sidebar_left().isDisplayed()) {
-            commonWebDrivers.toggle_sidebar_left().click();
-        } else{
-            commonWebDrivers.toggle_sidebar_2().click();
         }
     }
 
@@ -202,7 +202,7 @@ public class UserMasterNew extends Config {
 
         config.info(config.dateTime(), "Moving mouse to the Organization on header navigation");
         new Actions(driver).moveToElement(commonWebDrivers.organization_nav()).perform();
-        Thread.sleep(5000);
+        Thread.sleep(2000);
 
         config.info(config.dateTime(), "Moving mouse to the User link in organization navigation menu");
         wait.until(ExpectedConditions.elementToBeClickable(userMaster_ele));
@@ -268,7 +268,6 @@ public class UserMasterNew extends Config {
 //    }
 
     public void createButtonsStatus() {
-        System.out.println("Organization Name: " + orgName);
         config.info(config.dateTime(), "Validating create button's default status");
         System.out.println("Create button: " + inputFields.isButtonEnabled(createBtn_ele));
 
