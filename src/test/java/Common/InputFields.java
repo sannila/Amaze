@@ -19,8 +19,8 @@ import javax.lang.model.element.Element;
 
 public class InputFields extends Config {
 
-    @FindBy(className = "mat-error")
-    WebElement matError_ele;
+//    @FindBy(className = "mat-error")
+//    WebElement matError_ele;
 
     WebDriverWait wait;
     static Config config = new Config();
@@ -46,7 +46,7 @@ public class InputFields extends Config {
      * @param validData      // proper data for the input field
      */
     public void inputField_with_validData(WebElement ele, String inputFieldName, String validData, String methodName) {
-        config.info(config.dateTime(), "Validating the " + inputFieldName + "with valid data");
+        config.info(config.dateTime(), "Validating the " + inputFieldName + " with valid data");
         ele.clear();
         ele.sendKeys(validData);
         ele.sendKeys(Keys.TAB);
@@ -92,22 +92,23 @@ public class InputFields extends Config {
      * @param inputFieldName // field name
      * @param propertyKey    // key value for validation message from property file
      */
-    public void inputField_with_emptyData(WebElement ele, String inputFieldName, String propertyKey, String methodName) {
+    public void inputField_with_emptyData(WebElement ele, WebElement btn, WebElement err_ele, String inputFieldName, String propertyKey, String methodName) {
         config.info(config.dateTime(), "Validating the " + inputFieldName + " with empty data");
         ele.clear();
         ele.sendKeys(Keys.TAB);
+//        btn.click();
         try {
-            Assert.assertEquals(matError_ele.getText(), configFileReader.getPropertyValue(propertyKey));
+            Assert.assertEquals(err_ele.getText(), configFileReader.getPropertyValue(propertyKey));
         } catch (NoSuchElementException e) {
             screenshot.takeScreenshot(driver, getClassName(), inputFieldName, (methodName + "_emptyData"));
             config.fatal(config.dateTime(), inputFieldName + " validation is not found for empty data: " + e.getMessage());
         } catch (AssertionError e) {
             highlighter.setHighLighter(driver, ele);
-            highlighter.setHighLighter(driver, matError_ele);
+            highlighter.setHighLighter(driver, err_ele);
             screenshot.takeScreenshot(driver, getClassName(), inputFieldName, (methodName + "_emptyData"));
             config.fatal(config.dateTime(), inputFieldName + " input field validation is not proper for empty field: " + e.getMessage());
             highlighter.clearHighLighter(driver, ele);
-            highlighter.clearHighLighter(driver, matError_ele);
+            highlighter.clearHighLighter(driver, err_ele);
         }
     }
 
@@ -118,7 +119,7 @@ public class InputFields extends Config {
      * @param inputFieldName // field name
      * @param propertyKey    // key value for validation message from property file
      */
-    public void inputField_with_invalidData(WebElement ele, String inputFieldName, String propertyKey, String methodName) {
+    public void inputField_with_invalidData(WebElement ele, WebElement btn, WebElement err_ele, String inputFieldName, String propertyKey, String methodName) {
         config.info(config.dateTime(), "Validating the " + inputFieldName + " with invalid data");
         int j = 0;
         for (int i = 1; i < 35; i++) {
@@ -127,19 +128,20 @@ public class InputFields extends Config {
             ele.clear();
             ele.sendKeys(data);
             ele.sendKeys(Keys.TAB);
+//            btn.click();
 
             try {
-                Assert.assertEquals(matError_ele.getText(), configFileReader.getPropertyValue(propertyKey));
+                Assert.assertEquals(err_ele.getText(), configFileReader.getPropertyValue(propertyKey));
             } catch (NoSuchElementException e) {
                 screenshot.takeScreenshot(driver, getClassName(), inputFieldName, (methodName + "_invalidData"));
                 config.fatal(config.dateTime(), inputFieldName + " validation is not found for invalid data: " + e.getMessage());
             }  catch (AssertionError e) {
                 highlighter.setHighLighter(driver, ele);
-                highlighter.setHighLighter(driver, matError_ele);
+                highlighter.setHighLighter(driver, err_ele);
                 screenshot.takeScreenshot(driver, getClassName(), inputFieldName, (methodName + "_" + i));
                 config.fatal(config.dateTime(), inputFieldName + " input field validation is not proper for given data: " + e.getMessage());
                 highlighter.clearHighLighter(driver, ele);
-                highlighter.clearHighLighter(driver, matError_ele);
+                highlighter.clearHighLighter(driver, err_ele);
             }
         }
     }

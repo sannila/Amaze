@@ -28,7 +28,23 @@ public class CRUDFunction {
         JsonPath jsonPathEvaluator = response.jsonPath();
         String orgID = jsonPathEvaluator.get("organizations[\"id\"]").toString();
        return orgID.replace("[", "").replace("]", "");
+    }
 
+    public String getOrgName(String username, String password){
+        RestAssured.baseURI = base_api;
+        RequestSpecification request = RestAssured.given();
+
+        JSONObject requestParams = new JSONObject();
+        requestParams.put("username", username);
+        requestParams.put("password", password);
+
+        request.header("Content-Type", "application/json");
+        request.body(requestParams.toString());
+        Response response = request.post("/user/authenticate");
+
+        JsonPath jsonPathEvaluator = response.jsonPath();
+        String orgName = jsonPathEvaluator.get("organizations[\"name\"]").toString();
+        return orgName.replace("[", "").replace("]", "");
     }
 
     /**
