@@ -3,12 +3,12 @@
 <suite name="Amaze Suite" parallel="tests" verbose="10" thread-count="5" >
     <parameter name="browser" value="chrome" />
     <parameter name="url" value="http://localhost:4200/#/" />
-    <parameter name="username" value="amazeqa" />
-    <parameter name="password" value="Password@1234" />
+    <parameter name="username" value="bouser1" />
+    <parameter name="password" value="Password@123" />
     <test name="Amaze" thread-count="5">
         <groups>
             <run>
-                <include name="amazePOS.test.userMaster" />
+                <include name="amazePOS.test.user.*" />
             </run>
         </groups>
         <packages>

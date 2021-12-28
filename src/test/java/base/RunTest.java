@@ -1,6 +1,7 @@
 package base;
 
-import UserMaster.UserMaster;
+import UserMaster.UserMasterEditUpdate;
+import UserMaster.UserMasterNew;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -24,11 +25,18 @@ public class RunTest extends Config {
         tm.ticketMaster();
     }
 
-    @Test(groups = "amazePOS.test.userMaster", priority = 3)
+    @Test(groups = "amazePOS.test.user.new", priority = 3)
     @Parameters({"url", "username", "password"})
     public void userMaster(String url, String username, String password) throws InterruptedException {
-        UserMaster userMaster = new UserMaster();
-        userMaster.userMaster_test(url, username, password);
+        UserMasterNew userMasterNew = new UserMasterNew();
+        userMasterNew.userMaster_test(url, username, password);
+    }
+
+    @Test(groups = "amazePOS.test.user.edit", priority = 4)
+    @Parameters({"url", "username", "password"})
+    public void userMasterEdit(String url, String username, String password) throws InterruptedException {
+        UserMasterEditUpdate userMasterEditUpdate = new UserMasterEditUpdate();
+        userMasterEditUpdate.userMasterEdit_test(url, username, password);
     }
 
 }

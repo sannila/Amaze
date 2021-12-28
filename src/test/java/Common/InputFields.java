@@ -52,19 +52,19 @@ public class InputFields extends Config {
         ele.sendKeys(Keys.TAB);
 
         config.info(config.dateTime(), "Valid data send to the " + inputFieldName + " input field: " + validData);
-        Boolean isErrorDisplayed = isElementPresent(matError_ele);
-        try {
-            Assert.assertEquals(isErrorDisplayed, Boolean.FALSE);
-        } catch (AssertionError e) {
-            highlighter.setHighLighter(driver, ele);
-            highlighter.setHighLighter(driver, matError_ele);
-            screenshot.takeScreenshot(driver, getClassName(), inputFieldName, (methodName + "validData"));
-            config.fatal(config.dateTime(), inputFieldName + " should not validate with valid data: " + validData + " " + e.getMessage());
-            highlighter.clearHighLighter(driver, ele);
-            highlighter.clearHighLighter(driver, matError_ele);
-        } catch (NoSuchElementException e){
-            System.out.println("");
-        }
+//        Boolean isErrorDisplayed = isElementPresent(matError_ele);
+//        try {
+//            Assert.assertEquals(isErrorDisplayed, Boolean.FALSE);
+//        } catch (AssertionError e) {
+//            highlighter.setHighLighter(driver, ele);
+//            highlighter.setHighLighter(driver, matError_ele);
+//            screenshot.takeScreenshot(driver, getClassName(), inputFieldName, (methodName + "validData"));
+//            config.fatal(config.dateTime(), inputFieldName + " should not validate with valid data: " + validData + " " + e.getMessage());
+//            highlighter.clearHighLighter(driver, ele);
+//            highlighter.clearHighLighter(driver, matError_ele);
+//        } catch (NoSuchElementException e){
+//            System.out.println("");
+//        }
     }
 
     public String isButtonEnabled(WebElement btn_ele){

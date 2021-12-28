@@ -24,7 +24,7 @@ public class CommonWebDrivers extends Config {
     }
 
     public static WebElement toggle_sidebar_2(){ return driver.findElement(By.xpath("//*[text()='chevron_right']"));}
-
+    public static WebElement toggle_sidebar_left(){return driver.findElement(By.xpath("//*[text()='chevron_left']"));}
     /**
      * Element of Back office link in the left menu
      *
@@ -74,4 +74,7 @@ public class CommonWebDrivers extends Config {
     public static WebElement getOrganizationName(){
         return driver.findElement(By.className("organization_class"));
     }
+
+
+
 }

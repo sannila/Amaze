@@ -1,21 +1,22 @@
 package UserMaster;
 
+import CRUD.CRUDFunction;
 import Common.CommonWebDrivers;
 import Common.InputFields;
 import Login.Login;
 import base.Config;
+import com.mashape.unirest.http.JsonNode;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.json.Json;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import utils.ConfigFileReader;
 import utils.Highlighter;
 import utils.POSData;
@@ -25,7 +26,7 @@ import com.github.javafaker.Faker;
 import java.util.List;
 import java.util.Locale;
 
-public class UserMaster extends Config {
+public class UserMasterNew extends Config {
 
     //    Elements in PageFactory
     @FindBy(xpath = "//*[text()='User']")
@@ -112,23 +113,22 @@ public class UserMaster extends Config {
     public static String email;
     static String orgName;
 
+    static CRUDFunction crud = new CRUDFunction();
+
     //    driver wait object
     static WebDriverWait wait;
 
-    public UserMaster() {
-        log.info("\n****Initializing User Master Test Cases****");
+    public UserMasterNew() {
+        config.info(config.dateTime(), "\n****Initializing User Master Test Cases****");
         email = config.getEmailId();
         PageFactory.initElements(driver, this);
         wait = new WebDriverWait(driver, 30);
+
+//        JsonNode data_Count = crud.userGetAPI("2021Dec27_15_34_25@kmitsolutions.com");
     }
 
-    /**
-     * Navigating to the user master
-     *
-     * @throws InterruptedException
-     */
-    public void navigate_to_userMaster(String url) throws InterruptedException {
-        System.out.println("organization Name: " + orgName);
+
+    public void navigate_to_backOffice(String url) throws InterruptedException {
         wait.until(ExpectedConditions.invisibilityOf(commonWebDrivers.hexaLoader()));
         wait.until(ExpectedConditions.elementToBeClickable(commonWebDrivers.toggle_sidebar_2()));
         config.info(config.dateTime(), "Opening the left menu by clicking side toggle");
@@ -147,7 +147,15 @@ public class UserMaster extends Config {
             screenshot.takeScreenshot(driver, "UserMaster", "Navigate to user master", "backofficeLandingPageUrl");
             config.fatal(config.dateTime(), "Back Office landing page url is not proper: " + e.getMessage());
         }
+        commonWebDrivers.toggle_sidebar_left().click();
+    }
 
+    /**
+     * Navigating to the user master
+     *
+     * @throws InterruptedException
+     */
+    public void navigate_to_userMaster() throws InterruptedException {
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("hex_loader")));
         wait.until(ExpectedConditions.elementToBeClickable(commonWebDrivers.organization_nav()));
 
@@ -199,7 +207,7 @@ public class UserMaster extends Config {
 
         config.info(config.dateTime(), "Checking for new user page title");
         try {
-            Assert.assertEquals(commonWebDrivers.h2().getText(), configFileReader.getPropertyValue("h2"));
+            Assert.assertEquals(commonWebDrivers.h2().getText(), configFileReader.getPropertyValue("h2_new"));
         } catch (AssertionError e) {
             highlighter.setHighLighter(driver, commonWebDrivers.h2());
             screenshot.takeScreenshot(driver, "UserMaster", "navigateToNewUserScreen", "Page Heading");
@@ -498,17 +506,28 @@ public class UserMaster extends Config {
         createBtn_ele.click();
     }
 
-    public void checkForSuccessMessage(){
+    public void checkForSuccessMessage(String username, String password){
         try {
-            Assert.assertEquals(commonWebDrivers.getSnackBar().getText(), configFileReader.getPropertyValue("successSnackBar"));
+            Assert.assertEquals(commonWebDrivers.getSnackBar().getText().replace("\nDismiss", ""), configFileReader.getPropertyValue("successSnackBar"));
         } catch (NoSuchElementException e){
             screenshot.takeScreenshot(driver, "UserMaster", "checkForSuccessMessage", "checkForSuccessMessage");
             config.info(config.dateTime(), "Success message is not found after user creation");
         } catch (AssertionError e){
             highlighter.setHighLighter(driver, commonWebDrivers.getSnackBar());
             screenshot.takeScreenshot(driver, "UserMaster", "checkForSuccessMessage", "checkForSuccessMessage");
-            config.info(config.dateTime(), "Snack bar message is not proper after user creation: " + e.getMessage());
+            config.fatal(config.dateTime(), "Snack bar message is not proper after user creation: " + e.getMessage());
+            highlighter.clearHighLighter(driver, commonWebDrivers.getSnackBar());
         }
+
+//        int orgId = Integer.parseInt(crud.getOrgID(username, password));
+//
+//        try {
+//            Assert.assertEquals(crud.getUserAPI(email, orgId).contains(email), true);
+//            config.info(config.dateTime(), "Data found in user table for created user with given emailID: " + email);
+//        } catch (AssertionError e){
+//            screenshot.takeScreenshot(driver, "UserMaster", "checkForSuccessMessage", "CreateNewUser");
+//            config.fatal(config.dateTime(), "Data not found in user table for created user with given emailID: " + e.getMessage());
+//        }
     }
 
 
@@ -519,7 +538,8 @@ public class UserMaster extends Config {
         }
 //        Thread.sleep(5000);
         getOrganizationName();
-        navigate_to_userMaster(url);
+        navigate_to_backOffice(url);
+        navigate_to_userMaster();
         checkAddNewButton();
         navigateToNewUserScreen();
         createButtonsStatus();
@@ -545,7 +565,7 @@ public class UserMaster extends Config {
         designation();
         addRoleToList();
         createButton_onValidData();
-        checkForSuccessMessage();
+        checkForSuccessMessage(username, password);
     }
 
 
