@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Amaze"
-           tests="1"
+           tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="124.639">
+           time="320.092">
   <properties />
   
   
-            <testcase name="userMasterCopy" time="124.639" classname="base.RunTest" />
+            <testcase name="userMasterEdit" time="41.736" classname="base.RunTest" />
+                <testcase name="userMaster" time="205.842" classname="base.RunTest" />
+                <testcase name="userMasterCopy" time="72.514" classname="base.RunTest" />
       
 </testsuite>

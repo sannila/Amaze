@@ -143,7 +143,7 @@ public class UserMasterNew extends Config {
     static CommonWebDrivers commonWebDrivers = new CommonWebDrivers();
     static Screenshot screenshot = new Screenshot();
     static Highlighter highlighter = new Highlighter();
-    static ConfigFileReader configFileReader = new ConfigFileReader("src/main/resources/BackOffice/backofficeValidationMessages.properties");
+    static ConfigFileReader configFileReader = new ConfigFileReader("src/main/resources/BackOffice/user.properties");
     POSData posData = new POSData();
     Faker faker = new Faker(new Locale("en-US"));
     InputFields inputFields = new InputFields();
@@ -171,17 +171,12 @@ public class UserMasterNew extends Config {
         config.info(config.dateTime(), "Opening the left menu by clicking side toggle");
         Thread.sleep(5000);
 
-        if (commonWebDrivers.toggle_sidebar_right().isDisplayed()) {
-            commonWebDrivers.toggle_sidebar_right().click();
-        } else {
-            commonWebDrivers.toggle_sidebar_left().click();
-        }
-
+        commonWebDrivers.toggle_sidebar().click();
         config.info(config.dateTime(), "Navigating to Back office by clicking Back office menu");
+        wait.until(ExpectedConditions.invisibilityOf(commonWebDrivers.hexaLoader()));
+        Thread.sleep(5000);
         commonWebDrivers.backOffice_menu().click();
 
-        wait.until(ExpectedConditions.invisibilityOf(commonWebDrivers.hexaLoader()));
-        commonWebDrivers.toggle_sidebar_left().click();
         config.info(config.dateTime(), "Checking for the back office landing page url");
         try {
             Assert.assertEquals(driver.getCurrentUrl(), (url + configFileReader.getPropertyValue("backOfficeLandingPage")));
@@ -269,7 +264,6 @@ public class UserMasterNew extends Config {
 
     public void createButtonsStatus() {
         config.info(config.dateTime(), "Validating create button's default status");
-        System.out.println("Create button: " + inputFields.isButtonEnabled(createBtn_ele));
 
         try {
             Assert.assertEquals(inputFields.isButtonEnabled(createBtn_ele), "Disabled");
@@ -283,7 +277,6 @@ public class UserMasterNew extends Config {
 
     public void cancelButtonStatus() {
         config.info(config.dateTime(), "Validating the Cancel button's default status");
-        System.out.println("Cancel button: " + inputFields.isButtonEnabled(cancelBtn_ele));
 
         try {
             Assert.assertEquals(inputFields.isButtonEnabled(cancelBtn_ele), "Enabled");
@@ -297,7 +290,6 @@ public class UserMasterNew extends Config {
 
     public void addRoleButtonStatus() {
         config.info(config.dateTime(), "Validating Add Role button's default status");
-        System.out.println("Add Role button: " + inputFields.isButtonEnabled(addRoleBtn_ele));
 
         try {
             Assert.assertEquals(inputFields.isButtonEnabled(addRoleBtn_ele), "Disabled");
@@ -311,7 +303,6 @@ public class UserMasterNew extends Config {
 
     public void resetRoleButtonStatus() {
         config.info(config.dateTime(), "Validating Reset Role button's default status");
-        System.out.println("Reset Role button: " + inputFields.isButtonEnabled(roleResetBtn_ele));
 
         try {
             Assert.assertEquals(inputFields.isButtonEnabled(roleResetBtn_ele), "Enabled");
@@ -339,7 +330,7 @@ public class UserMasterNew extends Config {
 
 //        inputFields.inputField_with_invalidData(middleName_ele, createBtn_ele, middleName_error_ele, "Middle Name", "invalidField", "middleName");
 
-        String mName = ".KMIT";
+        String mName = "KM.IT";
         inputFields.inputField_with_validData(middleName_ele, "Middle Name", mName, "middleName");
     }
 
@@ -584,6 +575,18 @@ public class UserMasterNew extends Config {
 //        }
     }
 
+    public void onCreateSuccess(){
+        wait.until(ExpectedConditions.invisibilityOf(commonWebDrivers.gridLoader()));
+        config.info(config.dateTime(), "Newly created user should be listed in the grid list");
+        List<WebElement> email_colId_list = driver.findElements(By.xpath("//*[@col-id=\"email_1\"]"));
+        try {
+            Assert.assertEquals(email_colId_list.get(1).getText(), email);
+        } catch (AssertionError e){
+            screenshot.takeScreenshot(driver, "UserMasterCopyCreate", "onCopyCreateSuccess", "Copy Create Grid");
+            config.fatal(config.dateTime(), "Created user is not listed in the user master grid: " + e.getMessage());
+        }
+    }
+
 
     public void userMaster_test(String url, String username, String password) throws InterruptedException {
         if (driver.getCurrentUrl().equals(url)) {
@@ -592,6 +595,9 @@ public class UserMasterNew extends Config {
         }
 //        Thread.sleep(5000);
 //        getOrganizationName(username, password);
+        wait.until(ExpectedConditions.invisibilityOf(commonWebDrivers.hexaLoader()));
+        System.out.println("Actual URL: " + driver.getCurrentUrl());
+        System.out.println("Expected URL: " + url + configFileReader.getPropertyValue("posDashboard"));
         navigate_to_backOffice(url);
         navigate_to_userMaster();
         checkAddNewButton();
@@ -620,6 +626,7 @@ public class UserMasterNew extends Config {
         addRoleToList();
         createButton_onValidData();
         checkForSuccessMessage(username, password);
+        onCreateSuccess();
     }
 
 

@@ -28,6 +28,12 @@ public class CommonWebDrivers extends Config {
         return driver.findElement(By.className("toggle-sidebar-folded"));
     }
 
+    public void selectLeftMenu(){
+        if(!backOffice_menu().isEnabled()){
+            toggle_sidebar().click();
+        }
+    }
+
     public static WebElement toggle_sidebar_right() {
         return driver.findElement(By.xpath("//*[text()='chevron_right']"));
     }
