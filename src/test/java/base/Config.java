@@ -34,7 +34,7 @@ public class Config {
     public static POSData posData = new POSData();
     public static SendMail sendMail = new SendMail();
 
-    public String testCaseResult[];
+    public String ranFor[] = {};
 
     /**
      * this method will run once the first
@@ -88,7 +88,7 @@ public class Config {
         driver.quit();
         zipFolder(new File("src\\FailureScreenshot"));
         endTestCase("Amaze Test Suite");
-        sendMail.mailFunction();
+        sendMail.mailFunction(ranFor);
     }
 
 

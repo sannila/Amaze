@@ -21,7 +21,7 @@ public class SendMail {
     static Properties prop = new Properties();
 
 
-    public static void mailFunction(){
+    public static void mailFunction(String[] ranFor){
         // this will set host of server- you can change based on your requirement
         prop.put("mail.smtp.host", "smtp.gmail.com");
 
@@ -62,7 +62,7 @@ public class SendMail {
             BodyPart messageBodyPart1 = new MimeBodyPart();
 
             // Set the body of email
-            messageBodyPart1.setText("This the amaze pos test result");
+            messageBodyPart1.setText("This the amaze pos test result\n" + ranFor.toString());
 
             // Create another object to add another content
             MimeBodyPart messageBodyPart2 = new MimeBodyPart();

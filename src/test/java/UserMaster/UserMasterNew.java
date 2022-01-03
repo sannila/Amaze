@@ -157,6 +157,9 @@ public class UserMasterNew extends Config {
 
     public UserMasterNew() {
         config.info(config.dateTime(), "\n****Initializing User Master Test Cases****");
+        if (ranFor == null) {
+            config.ranFor[0] = "User Master New";
+        }
         email = config.getEmailId();
         PageFactory.initElements(driver, this);
         wait = new WebDriverWait(driver, 30);
@@ -563,25 +566,15 @@ public class UserMasterNew extends Config {
             config.fatal(config.dateTime(), "Snack bar message is not proper after user creation: " + e.getMessage());
             highlighter.clearHighLighter(driver, commonWebDrivers.getSnackBar());
         }
-
-//        int orgId = Integer.parseInt(crud.getOrgID(username, password));
-//
-//        try {
-//            Assert.assertEquals(crud.getUserAPI(email, orgId).contains(email), true);
-//            config.info(config.dateTime(), "Data found in user table for created user with given emailID: " + email);
-//        } catch (AssertionError e){
-//            screenshot.takeScreenshot(driver, "UserMaster", "checkForSuccessMessage", "CreateNewUser");
-//            config.fatal(config.dateTime(), "Data not found in user table for created user with given emailID: " + e.getMessage());
-//        }
     }
 
-    public void onCreateSuccess(){
+    public void onCreateSuccess() {
         wait.until(ExpectedConditions.invisibilityOf(commonWebDrivers.gridLoader()));
         config.info(config.dateTime(), "Newly created user should be listed in the grid list");
         List<WebElement> email_colId_list = driver.findElements(By.xpath("//*[@col-id=\"email_1\"]"));
         try {
             Assert.assertEquals(email_colId_list.get(1).getText(), email);
-        } catch (AssertionError e){
+        } catch (AssertionError e) {
             screenshot.takeScreenshot(driver, "UserMasterCopyCreate", "onCopyCreateSuccess", "Copy Create Grid");
             config.fatal(config.dateTime(), "Created user is not listed in the user master grid: " + e.getMessage());
         }
